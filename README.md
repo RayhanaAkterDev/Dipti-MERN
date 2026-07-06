@@ -24,3 +24,15 @@
 4. Multimedia Elements (Images, Video)
 5. Building a Simple Web Page
 6. Practice Session: Build a Personal Profile Page
+
+> Next modules will come soon ...
+---
+
+## Assignments
+
+### Assignment 01
+
+`HTML Assignment - Building a webpage using only HTML`
+
+- Click to: [View the source code](./assignments/html-assignment/index.html)
+- Live Link: [https://simple-html-webpage.netlify.app/](https://simple-html-webpage.netlify.app/)
