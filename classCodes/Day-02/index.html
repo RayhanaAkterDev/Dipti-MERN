@@ -3,236 +3,218 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Day 02</title>
+        <title>Webpage using only HTML</title>
     </head>
-    <body>
-        <!-- ANCHOR Heading Tags -->
-        <h1>This is heading 1</h1>
-        <h2>This is heading 2</h2>
-        <h3>This is heading 3</h3>
-        <h4>This is heading 4</h4>
-        <h5>This is heading 5</h5>
-        <h6>This is heading 6</h6>
-
-        <!-- ANCHOR Paragraph, Text Elements, Button, Image Tags -->
-        <p>
-            <b
-                ><i><u>Are Dummy Text Generators free to use?</u></i></b
-            >
-            Using a <b>Dummy Text Generator</b> can save you time and effort.
-            Instead of manually typing out random characters or words to fill in
-            content spaces, you can generate a
-            <i>specific amount of dummy text</i> with just a few clicks. It also
-            helps in maintaining the focus on the design or layout rather than
-            the content during the <u>initial stages</u> of a project.
-        </p>
-
-        <button>Read more</button>
-
-        <br />
-        <br />
-
-        <img
-            src="./images/sumaya.png"
-            alt="sumaya profile picture"
-            width="200"
-        />
-
-        <!-- ANCHOR Unorder List -->
-        <h3>Unorder List</h3>
-        <ul type="square">
-            <li>Sumaya</li>
-            <li>Sumaya</li>
-            <li>Sumaya</li>
-            <li>Sumaya</li>
-        </ul>
-
-        <!-- ANCHOR Order List -->
-        <h3>Order List</h3>
-        <ol type="I">
-            <li>Sumaya</li>
-            <li>Sumaya</li>
-            <li>Sumaya</li>
-        </ol>
-
-        <!-- ANCHOR Audio & Video Tag -->
-        <h3>Audio & Video Tag</h3>
-
-        <audio
-            src="./audio/juliush-dripping-water-nature-sounds-8050.mp3"
-            controls
-            autoplay
-            muted
-            loop
-        ></audio>
-
-        <br /><br />
-
-        <video
-            src="./video/Which is your Fav Jodi🎀💗.mp4"
-            width="400"
-            controls
-            autoplay
-            muted
-            loop
-        ></video>
-
-        <hr />
-
-        <h3>HTML Form Tag & Attributes</h3>
-        <form action="#">
-            <label for="username">Name: </label>
-            <input
-                type="text"
-                name="username"
-                placeholder="Enter Your Name"
-                maxlength="24"
-                minlength="2"
-            />
-
-            <br />
-            <br />
-
-            <!-- ANCHOR Input-type radio -->
-            <label for="gender">Gender: </label>
-            <input type="radio" name="gender" /> Male
-            <input type="radio" name="gender" /> Female
-
-            <br />
-            <br />
-
-            <!-- ANCHOR Input-type checkbox -->
-            <label for="skills">Skills: </label>
-            <input type="checkbox" name="skills" /> Html
-            <input type="checkbox" name="skills" /> CSS
-            <input type="checkbox" name="skills" /> JS
-            <input type="checkbox" name="skills" /> React
-
-            <br />
-            <br />
-
-            <!-- ANCHOR Select & Option tag -->
-            <select name="countries" id="countries">
-                <option value="">-- Select Country --</option>
-                <option value="BD">Bangladesh</option>
-                <option value="DE">Germany</option>
-                <option value="CH">Switzerland</option>
-                <option value="JP">Japan</option>
-                <option value="CN">China</option>
-            </select>
-
-            <br />
-            <br />
-
-            <!-- ANCHOR Textarea -->
-            <textarea
-                name="message"
-                id="user-review"
-                placeholder="Write your review ..."
-                cols="60"
-                rows="10"
-            ></textarea>
-
-            <br />
-            <br />
-
-            <input type="submit" value="Submit" />
-        </form>
-
-        <br />
-        <hr />
-        <br />
-
-        <!-- ANCHOR Iframe Tag -->
-        <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/8TYic74XPAc?si=8h8bafykp0kkfx9q"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-            "
-            allowfullscreen
-        >
-        </iframe>
-
-        <br />
-        <br />
-
-        <center>
-            <iframe src="https://www.prothomalo.com/" width="40%" height="600">
-            </iframe>
-
-            <iframe src="https://www.bd-pratidin.com/" width="40%" height="600">
-            </iframe>
-        </center>
-
-        <br />
-        <br />
-        <hr />
-
-        <!-- ANCHOR HTML Table -->
-
-        <h3 align="center">HTML Table</h3>
-        <table border="1" cellpadding="10" cellspacing="0" align="center">
-            <tr>
-                <th>Sl.</th>
-                <th>Name</th>
-                <th>Address</th>
-            </tr>
-
-            <tr>
-                <td>01.</td>
-                <td>Sumaya</td>
-                <td>Address block-A</td>
-            </tr>
-
-            <tr>
-                <td>02.</td>
-                <td>Raja</td>
-                <td>Address block-B</td>
-            </tr>
-
-            <tr>
-                <td>03.</td>
-                <td>Vadu</td>
-                <td>Address block-C</td>
-            </tr>
-        </table>
-
-        <br />
-        <br />
-
+    <body bgcolor="lavender">
         <table
-            border="1"
+            width="800"
             cellspacing="0"
-            width="600"
-            height="200"
+            cellpadding="4"
             align="center"
+            bgcolor="white"
         >
+            <!-- Header -->
             <tr>
-                <td colspan="2">1</td>
-                <td rowspan="3">2</td>
-                <td colspan="2">3</td>
+                <!-- Logo -->
+                <td colspan="3">
+                    <img src="./images/sumaya.png" alt="Logo" height="160" />
+                </td>
+
+                <!-- Menu -->
+                <td colspan="3" align="right">
+                    <button>Home</button>
+                    <button>About</button>
+                    <button>About</button>
+                    <button>Contact</button>
+                </td>
             </tr>
 
             <tr>
-                <td colspan="2">4</td>
-                <td colspan="1">5</td>
-                <td rowspan="2">6</td>
+                <td colspan="6">
+                    <marquee
+                        behavior="scroll"
+                        direction="left"
+                        bgcolor="purple"
+                    >
+                        <font color="white">
+                            🌟 Welcome to My HTML Practice Website 🌟 Created as
+                            Part of My HTML Assignment | Learn • Practice •
+                            Improve
+                        </font>
+                    </marquee>
+                </td>
+            </tr>
+
+            <!-- Banner -->
+            <tr>
+                <td colspan="6">
+                    <img
+                        src="./images/banner.jpg"
+                        alt="Banner image"
+                        width="100%"
+                    />
+                    <hr />
+                </td>
+            </tr>
+
+            <!-- Team -->
+            <tr>
+                <td colspan="6" align="center">
+                    <h2>Our Team</h2>
+                </td>
+            </tr>
+
+            <!-- Members -->
+            <tr align="center">
+                <td colspan="2">
+                    <img
+                        src="./images/team/team_member_1.jpg"
+                        alt="Team Member Image"
+                    />
+                    <h3>Mr. David</h3>
+                    <p>
+                        An effective team member is ready to lend a hand to
+                        teammates who need help/assistance. Be proactive and ask
+                        your colleagues if they need help.
+                    </p>
+                    <button>Read More</button>
+                </td>
+                <td colspan="2">
+                    <img
+                        src="./images/team/team_member_2.jpg"
+                        alt="Team Member Image"
+                    />
+                    <h3>Sumaya</h3>
+                    <p>
+                        An effective team member is ready to lend a hand to
+                        teammates who need help/assistance. Be proactive and ask
+                        your colleagues if they need help.
+                    </p>
+                    <button>Read More</button>
+                </td>
+                <td colspan="2">
+                    <img
+                        src="./images/team/team_member_3.jpg"
+                        alt="Team Member Image"
+                    />
+                    <h3>Raja Ahmed</h3>
+                    <p>
+                        An effective team member is ready to lend a hand to
+                        teammates who need help/assistance. Be proactive and ask
+                        your colleagues if they need help.
+                    </p>
+                    <button>Read More</button>
+                </td>
             </tr>
 
             <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
+                <td colspan="6" align="center">
+                    <br />
+                    <hr />
+                    <br />
+                    <h2><u>Contact Us</u></h2>
+                    <br />
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td colspan="3" align="right">
+                    <form action="#">
+                        <label for="username">Your Name</label> <br />
+                        <input type="text" name="username" />
+
+                        <br /><br />
+
+                        <label for="email">Your Email</label> <br />
+                        <input type="email" name="email" />
+
+                        <br /><br />
+
+                        <label for="message">Your Message</label> <br />
+                        <textarea
+                            id=""
+                            name="message"
+                            placeholder="Write your message"
+                            cols="20"
+                            rows="4"
+                        ></textarea>
+
+                        <br /><br />
+
+                        <button>Send Message</button>
+                    </form>
+                </td>
+                <td colspan="3">
+                    <table style="font-style: italic">
+                        <tr valign="top">
+                            <td>Address</td>
+                            <td>:</td>
+                            <td>
+                                9 Sher-E-Bang Road, <br />
+                                Hazaribagh, <br />
+                                Dhaka-1209
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td>:</td>
+                            <td>01955517560</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>sumaya55230@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>:</td>
+                            <td>
+                                <a href="#">fb.com/sumaya.facebook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Website</td>
+                            <td>:</td>
+                            <td>
+                                <a href="#">My Site</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td>:</td>
+                            <td>10th-Sep-1987</td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>:</td>
+                            <td>Bangladesh</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <br />
+                    <br />
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7893841000596!2d90.37380541109306!3d23.754888878578285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8adf797a677%3A0x70ebff41575242f8!2sDaffodil%20Institute%20of%20IT%20(DIIT)!5e0!3m2!1sen!2sbd!4v1783243511672!5m2!1sen!2sbd"
+                        width="100%"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                    ></iframe>
+                </td>
+            </tr>
+            <tr bgcolor="black">
+                <td colspan="6">
+                    <font color="white">
+                        <p align="center">
+                            Copyright &copy; | 2026 | All Rights Reserved
+                        </p>
+                    </font>
+                </td>
             </tr>
         </table>
     </body>

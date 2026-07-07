@@ -49,7 +49,9 @@
    - [HTML Iframes](./html/22_iframes.html)
 
 5. **Additional HTML Topics**: [View source code](./html/23_additional_topics.html)
-6. **Practice Session**: [Building a Simple Web Page](./assignments/html-assignment/index.html)
+6. **Practice Session**
+   - [practice-code.html](./classCodes/Day-02/practice-code.html)
+   - [index.html](./classCodes/Day-02/index.html)
 7. **Mini Project**: [A Personal Profile Page](#assignment-01)
 
 > Next modules will come soon ...

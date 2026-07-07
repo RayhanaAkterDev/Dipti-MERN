@@ -1,219 +1,550 @@
+<!--
+        Topic: Assignment 01 - A Personal Profile Page
+        Purpose: To create a personal profile page using only HTML.
+        Features: This assignment will help you understand the basic structure of an HTML document, including the use of common HTML tags like headings, paragraphs, lists, images, and links.
+
+        Author: Rayhana Akter Sumaya
+        Email: rayhanaaktersumaya.dev@gmail.com
+        Last Updated: 2026-07-07
+    -->
+
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta
+            name="description"
+            content="This is a personal profile page created as part of an HTML assignment. It includes headings, paragraphs, lists, images, and links to showcase the individual's profile."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Assignment 01 - A Personal Profile Page</title>
     </head>
-    <body bgcolor="lavender">
-        <table
-            width="800"
-            cellspacing="0"
-            cellpadding="4"
-            align="center"
-            bgcolor="white"
-        >
-            <!-- Header -->
-            <tr>
-                <!-- Logo -->
-                <td colspan="3">
-                    <img src="./images/logo.png" alt="Logo" height="160" />
-                </td>
+    <body>
+        <!-- Header -->
+        <header>
+            <table
+                align="center"
+                width="1200px"
+                cellspacing="0"
+                cellpadding="10"
+            >
+                <tr>
+                    <td colspan="3" width="50%">
+                        <!-- Logo -->
+                        <a href="index.html">
+                            <font color="#010101" size="5">Sumaya.Dev</font>
+                        </a>
+                    </td>
 
-                <!-- Menu -->
-                <td colspan="3" align="right">
-                    <button>Home</button>
-                    <button>About</button>
-                    <button>About</button>
-                    <button>Contact</button>
-                </td>
-            </tr>
+                    <td colspan="3" width="50%" align="right">
+                        <!-- Navigation Menu -->
+                        <nav>
+                            <a href="index.html">
+                                <font color="#010101"> Home </font>
+                            </a>
+                            |
+                            <a href="about.html">
+                                <font color="#010101"> About </font>
+                            </a>
+                            |
+                            <a href="contact.html">
+                                <font color="#010101"> Contact </font>
+                            </a>
+                        </nav>
+                    </td>
+                </tr>
+            </table>
+        </header>
 
-            <tr>
-                <td colspan="6">
-                    <marquee
-                        behavior="scroll"
-                        direction="left"
-                        bgcolor="purple"
-                    >
-                        <font color="white">
-                            🌟 Welcome to My HTML Practice Website 🌟 Created as
-                            Part of My HTML Assignment | Learn • Practice •
-                            Improve
-                        </font>
-                    </marquee>
-                </td>
-            </tr>
+        <br />
+        <br />
 
-            <!-- Banner -->
-            <tr>
-                <td colspan="6">
-                    <img
-                        src="./images/banner.jpg"
-                        alt="Banner image"
-                        width="100%"
-                    />
-                    <hr />
-                </td>
-            </tr>
+        <!-- Main Content -->
+        <main>
+            <table width="1200" align="center" cellspacing="0" cellpadding="10">
+                <!-- Hero -->
+                <tr>
+                    <td colspan="3" width="50%">
+                        <p><b>Hi There, I'm</b></p>
+                        <h1>Rayhana Akter Sumaya</h1>
+                        <h3><em>Aspiring Full Stack Web Developer</em></h3>
 
-            <!-- Team -->
-            <tr>
-                <td colspan="6" align="center">
-                    <h2>Our Team</h2>
-                </td>
-            </tr>
-
-            <!-- Members -->
-            <tr align="center">
-                <td colspan="2">
-                    <img
-                        src="./images/team/team_member_1.jpg"
-                        alt="Team Member Image"
-                    />
-                    <h3>Mr. David</h3>
-                    <p>
-                        An effective team member is ready to lend a hand to
-                        teammates who need help/assistance. Be proactive and ask
-                        your colleagues if they need help.
-                    </p>
-                    <button>Read More</button>
-                </td>
-                <td colspan="2">
-                    <img
-                        src="./images/team/team_member_2.jpg"
-                        alt="Team Member Image"
-                    />
-                    <h3>Sumaya</h3>
-                    <p>
-                        An effective team member is ready to lend a hand to
-                        teammates who need help/assistance. Be proactive and ask
-                        your colleagues if they need help.
-                    </p>
-                    <button>Read More</button>
-                </td>
-                <td colspan="2">
-                    <img
-                        src="./images/team/team_member_3.jpg"
-                        alt="Team Member Image"
-                    />
-                    <h3>Raja Ahmed</h3>
-                    <p>
-                        An effective team member is ready to lend a hand to
-                        teammates who need help/assistance. Be proactive and ask
-                        your colleagues if they need help.
-                    </p>
-                    <button>Read More</button>
-                </td>
-            </tr>
-
-            <tr>
-                <td colspan="6" align="center">
-                    <br />
-                    <hr />
-                    <br />
-                    <h2><u>Contact Us</u></h2>
-                    <br />
-                </td>
-            </tr>
-
-            <tr valign="top">
-                <td colspan="3" align="right">
-                    <form action="#">
-                        <label for="username">Your Name</label> <br />
-                        <input type="text" name="username" />
-
-                        <br /><br />
-
-                        <label for="email">Your Email</label> <br />
-                        <input type="email" name="email" />
-
-                        <br /><br />
-
-                        <label for="message">Your Message</label> <br />
-                        <textarea
-                            id=""
-                            name="message"
-                            placeholder="Write your message"
-                            cols="20"
-                            rows="4"
-                        ></textarea>
-
-                        <br /><br />
-
-                        <button>Send Message</button>
-                    </form>
-                </td>
-                <td colspan="3">
-                    <table style="font-style: italic">
-                        <tr valign="top">
-                            <td>Address</td>
-                            <td>:</td>
-                            <td>
-                                9 Sher-E-Bang Road, <br />
-                                Hazaribagh, <br />
-                                Dhaka-1209
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Mobile</td>
-                            <td>:</td>
-                            <td>01955517560</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td>sumaya55230@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td>:</td>
-                            <td>
-                                <a href="#">fb.com/sumaya.facebook</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Website</td>
-                            <td>:</td>
-                            <td>
-                                <a href="#">My Site</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Date of Birth</td>
-                            <td>:</td>
-                            <td>10th-Sep-1987</td>
-                        </tr>
-                        <tr>
-                            <td>Country</td>
-                            <td>:</td>
-                            <td>Bangladesh</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="6">
-                    <br />
-                    <br />
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7893841000596!2d90.37380541109306!3d23.754888878578285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8adf797a677%3A0x70ebff41575242f8!2sDaffodil%20Institute%20of%20IT%20(DIIT)!5e0!3m2!1sen!2sbd!4v1783243511672!5m2!1sen!2sbd"
-                        width="100%"
-                        height="450"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                    ></iframe>
-                </td>
-            </tr>
-            <tr bgcolor="black">
-                <td colspan="6">
-                    <font color="white">
-                        <p align="center">
-                            Copyright &copy; | 2026 | All Rights Reserved
+                        <p>
+                            I am a Computer Science and Engineering (CSE)
+                            student with a passion for creating clean,
+                            responsive, and user-friendly websites. Currently, I
+                            am learning the MERN stack and continuously
+                            improving my skills by building projects and
+                            exploring modern web technologies.
                         </p>
-                    </font>
+
+                        <br />
+                        <button>Contact Me</button>
+                    </td>
+
+                    <td colspan="3" width="50%" align="right">
+                        <img
+                            src="./images/profile-image.png"
+                            alt="Profile Image"
+                            width="400px"
+                        />
+                    </td>
+                </tr>
+
+                <!-- Horizontal Line -->
+                <tr>
+                    <td colspan="6">
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+                    </td>
+                </tr>
+
+                <!-- About Me -->
+                <tr>
+                    <td colspan="6">
+                        <table cellspacing="0" cellpadding="10" width="100%">
+                            <tr valign="top">
+                                <td colspan="3" width="50%">
+                                    <video width="600" controls muted>
+                                        <source
+                                            src="./videos/about-me-video.mp4"
+                                            type="video/mp4"
+                                        />
+                                        Your browser does not support the video
+                                        element.
+                                    </video>
+                                </td>
+                                <td colspan="3" width="50%">
+                                    <h2>About Me</h2>
+                                    <p>
+                                        I enjoy turning ideas into simple and
+                                        meaningful web experiences through code.
+                                        Every new project gives me the
+                                        opportunity to improve my
+                                        problem-solving skills, learn modern
+                                        development practices, and become a more
+                                        confident developer.
+                                    </p>
+                                    <p>
+                                        As someone who enjoys continuous
+                                        learning, I like exploring new
+                                        technologies, experimenting with
+                                        different approaches, and building
+                                        projects that strengthen my
+                                        understanding of web development. I
+                                        believe consistency, curiosity, and
+                                        hands-on practice are the keys to
+                                        becoming a skilled software developer.
+                                    </p>
+                                    <p>
+                                        My goal is to create websites that are
+                                        clean, responsive, and easy to use while
+                                        continuously expanding my knowledge and
+                                        preparing for a successful career in the
+                                        tech industry.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Horizontal Line -->
+                <tr>
+                    <td colspan="6">
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+                    </td>
+                </tr>
+
+                <!-- Services -->
+                <tr>
+                    <td colspan="6" width="100%" align="center">
+                        <h2>My Services</h2>
+                        <p>
+                            As an aspiring web developer, I am continuously
+                            learning and improving my skills <br />
+                            to create responsive, user-friendly, and visually
+                            appealing websites.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr align="center">
+                    <td colspan="2" width="33%">
+                        <table
+                            width="100%"
+                            cellspacing="0"
+                            cellpadding="10"
+                            border="1"
+                            bgcolor="#f9f9f9"
+                        >
+                            <tr>
+                                <td>
+                                    <img
+                                        src="./images/services/service1.jpg"
+                                        alt="service image web design"
+                                        width="100%"
+                                    />
+
+                                    <h3><font size="5">Web Design</font></h3>
+
+                                    <p>
+                                        Creating clean, modern, and
+                                        user-friendly website layouts with a
+                                        strong focus on readability, simplicity,
+                                        and a pleasant user experience.
+                                    </p>
+
+                                    <br />
+                                    <button>Know More</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td colspan="2" width="33%">
+                        <table
+                            width="100%"
+                            cellspacing="0"
+                            cellpadding="10"
+                            border="1"
+                            bgcolor="#f9f9f9"
+                        >
+                            <tr>
+                                <td>
+                                    <img
+                                        src="./images/services/service2.jpg"
+                                        alt="service image web development"
+                                        width="100%"
+                                    />
+
+                                    <h3>
+                                        <font size="5">Web Development</font>
+                                    </h3>
+
+                                    <p>
+                                        Building responsive websites using
+                                        modern web technologies while
+                                        continuously improving my development
+                                        skills through hands-on projects.
+                                    </p>
+
+                                    <br />
+                                    <button>Know More</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td colspan="2" width="33%">
+                        <table
+                            width="100%"
+                            cellspacing="0"
+                            cellpadding="10"
+                            border="1"
+                            bgcolor="#f9f9f9"
+                        >
+                            <tr>
+                                <td>
+                                    <img
+                                        src="./images/services/service3.jpg"
+                                        alt="service image search engine optimization"
+                                        width="90%"
+                                    />
+
+                                    <h3>
+                                        <font size="5">SEO Optimization</font>
+                                    </h3>
+
+                                    <p>
+                                        Learning and applying basic SEO
+                                        practices to improve website visibility,
+                                        accessibility, and overall search engine
+                                        performance.
+                                    </p>
+
+                                    <br />
+                                    <button>Know More</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Horizontal Line -->
+                <tr>
+                    <td colspan="6">
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+                    </td>
+                </tr>
+
+                <!-- My Works -->
+                <tr align="center">
+                    <td colspan="6">
+                        <h2>My Works</h2>
+                        <p>
+                            Explore a selection of my recent projects that
+                            showcase my learning, creativity, and passion for
+                            building modern web experiences.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">
+                        <table cellspacing="0" cellpadding="10" align="center">
+                            <tr>
+                                <td rowspan="2">
+                                    <img
+                                        src="./images/works/work1.jpg"
+                                        alt="work image 1"
+                                        width="100%"
+                                    />
+                                </td>
+                                <td colspan="3">
+                                    <img
+                                        src="./images/works/work2.jpg"
+                                        alt="work image 2"
+                                        width="100%"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        src="./images/works/work3.jpg"
+                                        alt="work image 3"
+                                        width="100%"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        src="./images/works/work4.jpg"
+                                        alt="work image 4"
+                                        width="100%"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <img
+                                        src="./images/works/work5.jpg"
+                                        alt="work image 5"
+                                        width="100%"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        src="./images/works/work6.jpg"
+                                        alt="work image 6"
+                                        width="100%"
+                                    />
+                                </td>
+                                <td colspan="3">
+                                    <img
+                                        src="./images/works/work7.jpg"
+                                        alt="work image 7"
+                                        width="100%"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Horizontal Line -->
+                <tr>
+                    <td colspan="6">
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+                    </td>
+                </tr>
+
+                <!-- By the Numbers -->
+                <tr align="center">
+                    <td colspan="6">
+                        <h2>By the Numbers</h2>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">
+                        <table
+                            border="1"
+                            cellpadding="24"
+                            bgcolor="#010101"
+                            align="center"
+                        >
+                            <tr align="center">
+                                <td>
+                                    <font color="white">
+                                        <h2>10+</h2>
+                                        <h3>Projects Built</h3>
+                                        <p>
+                                            Developed academic and personal
+                                            projects to strengthen my web
+                                            development skills.
+                                        </p>
+                                    </font>
+                                </td>
+
+                                <td>
+                                    <font color="white">
+                                        <h2>8+</h2>
+                                        <h3>Technologies Learned</h3>
+                                        <p>
+                                            Continuously learning modern tools
+                                            and technologies for building
+                                            responsive web applications.
+                                        </p>
+                                    </font>
+                                </td>
+
+                                <td>
+                                    <font color="white">
+                                        <h2>100%</h2>
+                                        <h3>Passion for Learning</h3>
+                                        <p>
+                                            Dedicated to continuous improvement
+                                            through practice, real-world
+                                            projects, and lifelong learning.
+                                        </p>
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Horizontal Line -->
+                <tr>
+                    <td colspan="6">
+                        <br />
+                        <br />
+                        <hr />
+                        <br />
+                    </td>
+                </tr>
+
+                <!-- Contact Me -->
+                <tr>
+                    <td colspan="3" width="50%">
+                        <h2>Contact Me</h2>
+                        <p>
+                            Feel free to reach out to me for any inquiries or
+                            collaborations. <br />
+                            You can contact me through the following channels:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Email:
+                                <a href="mailto:sumaya@example.com"
+                                    >sumaya@example.com</a
+                                >
+                            </li>
+                            <li>
+                                LinkedIn:
+                                <a
+                                    href="https://linkedin.com/in/sumaya"
+                                    target="_blank"
+                                    >linkedin.com/in/sumaya</a
+                                >
+                            </li>
+                        </ul>
+
+                        <table cellspacing="0" cellpadding="10" width="100%">
+                            <br />
+                            <h3>Send Direct Message</h3>
+                            <form action="#">
+                                <tr>
+                                    <td width="20px">
+                                        <label for="name">Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20px">
+                                        <label for="email">Email</label>
+                                    </td>
+                                    <td>
+                                        <input type="email" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20px">
+                                        <label for="email">Message</label>
+                                    </td>
+                                    <td>
+                                        <textarea
+                                            name=""
+                                            id=""
+                                            cols="45"
+                                            rows="7"
+                                        ></textarea>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20px"></td>
+                                    <td>
+                                        <br />
+                                        <button type="submit">Send</button>
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                    </td>
+                                </tr>
+                            </form>
+                        </table>
+                    </td>
+
+                    <td colspan="3" width="50%">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14612.669203025167!2d90.4531859483118!3d23.70571890778999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b77186e2e3f9%3A0x1e98ee292b8b578b!2sMatuail%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1783444311622!5m2!1sen!2sbd"
+                            width="100%"
+                            height="450"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                        ></iframe>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <!-- Footer -->
+        <table
+            align="center"
+            bgcolor="#010101"
+            width="100%"
+            cellspacing="0"
+            cellpadding="10"
+        >
+            <tr>
+                <td align="center">
+                    <footer>
+                        <p>
+                            <font color="white">
+                                &copy; 2026 Sumaya.Dev | All rights reserved.
+                            </font>
+                        </p>
+                    </footer>
                 </td>
             </tr>
         </table>

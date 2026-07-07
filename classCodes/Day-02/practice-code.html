@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day 02</title>
+    </head>
+    <body>
+        <!-- ANCHOR Heading Tags -->
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+
+        <!-- ANCHOR Paragraph, Text Elements, Button, Image Tags -->
+        <p>
+            <b
+                ><i><u>Are Dummy Text Generators free to use?</u></i></b
+            >
+            Using a <b>Dummy Text Generator</b> can save you time and effort.
+            Instead of manually typing out random characters or words to fill in
+            content spaces, you can generate a
+            <i>specific amount of dummy text</i> with just a few clicks. It also
+            helps in maintaining the focus on the design or layout rather than
+            the content during the <u>initial stages</u> of a project.
+        </p>
+
+        <button>Read more</button>
+
+        <br />
+        <br />
+
+        <img
+            src="./images/sumaya.png"
+            alt="sumaya profile picture"
+            width="200"
+        />
+
+        <!-- ANCHOR Unorder List -->
+        <h3>Unorder List</h3>
+        <ul type="square">
+            <li>Sumaya</li>
+            <li>Sumaya</li>
+            <li>Sumaya</li>
+            <li>Sumaya</li>
+        </ul>
+
+        <!-- ANCHOR Order List -->
+        <h3>Order List</h3>
+        <ol type="I">
+            <li>Sumaya</li>
+            <li>Sumaya</li>
+            <li>Sumaya</li>
+        </ol>
+
+        <!-- ANCHOR Audio & Video Tag -->
+        <h3>Audio & Video Tag</h3>
+
+        <audio
+            src="./audio/juliush-dripping-water-nature-sounds-8050.mp3"
+            controls
+            autoplay
+            muted
+            loop
+        ></audio>
+
+        <br /><br />
+
+        <video
+            src="./video/Which is your Fav Jodi🎀💗.mp4"
+            width="400"
+            controls
+            autoplay
+            muted
+            loop
+        ></video>
+
+        <hr />
+
+        <h3>HTML Form Tag & Attributes</h3>
+        <form action="#">
+            <label for="username">Name: </label>
+            <input
+                type="text"
+                name="username"
+                placeholder="Enter Your Name"
+                maxlength="24"
+                minlength="2"
+            />
+
+            <br />
+            <br />
+
+            <!-- ANCHOR Input-type radio -->
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" /> Male
+            <input type="radio" name="gender" /> Female
+
+            <br />
+            <br />
+
+            <!-- ANCHOR Input-type checkbox -->
+            <label for="skills">Skills: </label>
+            <input type="checkbox" name="skills" /> Html
+            <input type="checkbox" name="skills" /> CSS
+            <input type="checkbox" name="skills" /> JS
+            <input type="checkbox" name="skills" /> React
+
+            <br />
+            <br />
+
+            <!-- ANCHOR Select & Option tag -->
+            <select name="countries" id="countries">
+                <option value="">-- Select Country --</option>
+                <option value="BD">Bangladesh</option>
+                <option value="DE">Germany</option>
+                <option value="CH">Switzerland</option>
+                <option value="JP">Japan</option>
+                <option value="CN">China</option>
+            </select>
+
+            <br />
+            <br />
+
+            <!-- ANCHOR Textarea -->
+            <textarea
+                name="message"
+                id="user-review"
+                placeholder="Write your review ..."
+                cols="60"
+                rows="10"
+            ></textarea>
+
+            <br />
+            <br />
+
+            <input type="submit" value="Submit" />
+        </form>
+
+        <br />
+        <hr />
+        <br />
+
+        <!-- ANCHOR Iframe Tag -->
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/8TYic74XPAc?si=8h8bafykp0kkfx9q"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+            "
+            allowfullscreen
+        >
+        </iframe>
+
+        <br />
+        <br />
+
+        <center>
+            <iframe src="https://www.prothomalo.com/" width="40%" height="600">
+            </iframe>
+
+            <iframe src="https://www.bd-pratidin.com/" width="40%" height="600">
+            </iframe>
+        </center>
+
+        <br />
+        <br />
+        <hr />
+
+        <!-- ANCHOR HTML Table -->
+
+        <h3 align="center">HTML Table</h3>
+        <table border="1" cellpadding="10" cellspacing="0" align="center">
+            <tr>
+                <th>Sl.</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+
+            <tr>
+                <td>01.</td>
+                <td>Sumaya</td>
+                <td>Address block-A</td>
+            </tr>
+
+            <tr>
+                <td>02.</td>
+                <td>Raja</td>
+                <td>Address block-B</td>
+            </tr>
+
+            <tr>
+                <td>03.</td>
+                <td>Vadu</td>
+                <td>Address block-C</td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+
+        <table
+            border="1"
+            cellspacing="0"
+            width="600"
+            height="200"
+            align="center"
+        >
+            <tr>
+                <td colspan="2">1</td>
+                <td rowspan="3">2</td>
+                <td colspan="2">3</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">4</td>
+                <td colspan="1">5</td>
+                <td rowspan="2">6</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </body>
+</html>

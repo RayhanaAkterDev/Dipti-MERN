@@ -1,0 +1,9 @@
+.france {
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+}
+
+.box-model {
+    margin: 20px;
+}
