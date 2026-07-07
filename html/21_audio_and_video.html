@@ -1,0 +1,145 @@
+<!--
+    Topic: HTML Audio & Video
+    Purpose: Demonstrates how to embed audio and video in HTML.
+    Features:
+        - HTML audio
+        - HTML video
+        - Common media attributes
+        - Source element
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates how to embed audio and video using HTML."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Audio & Video</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Audio & Video</h1>
+
+            <p>
+                HTML provides the <code>&lt;audio&gt;</code> and
+                <code>&lt;video&gt;</code> elements for embedding multimedia
+                content on a webpage.
+            </p>
+
+            <hr />
+
+            <!-- Common Media Attributes -->
+
+            <h2>Common Media Attributes</h2>
+
+            <p>
+                The following attributes are commonly used with both
+                <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>.
+            </p>
+
+            <ul>
+                <li>
+                    <code>controls</code> - displays the built-in media
+                    controls.
+                </li>
+
+                <li>
+                    <code>autoplay</code> - starts playback automatically when
+                    the page loads.
+                </li>
+
+                <li><code>loop</code> - continuously repeats the media.</li>
+
+                <li>
+                    <code>muted</code> - starts playback with the sound turned
+                    off.
+                </li>
+
+                <li>
+                    <code>preload</code> - specifies how much media should be
+                    loaded before playback.
+                </li>
+
+                <li>
+                    <code>&lt;source&gt;</code> - allows multiple media files to
+                    be provided for better browser compatibility.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- Audio Example -->
+
+            <h2>Audio Example</h2>
+
+            <audio controls>
+                <source
+                    src="./media/audio/sample-audio.mp3"
+                    type="audio/mpeg"
+                />
+
+                Your browser does not support the audio element.
+            </audio>
+
+            <hr />
+
+            <!-- Video Example -->
+
+            <h2>Video Example</h2>
+
+            <video
+                width="600"
+                controls
+                muted
+                poster="./images/video-poster.jpg"
+            >
+                <source src="./media/video/sample-video.mp4" type="video/mp4" />
+
+                <!--
+                    Note:
+                    The browser checks each <source> element from top to bottom and plays the first media file it supports.
+
+                    It does NOT play all of the files together. Additional <source> elements act as backup options for better browser compatibility.
+                -->
+
+                Your browser does not support the video element.
+            </video>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+
+            <p>
+                <strong>Modern HTML Recommendation:</strong>
+                Always include the <code>controls</code> attribute unless media
+                playback is handled with custom controls. Use the
+                <code>&lt;source&gt;</code> element for better browser
+                compatibility and provide fallback text for unsupported
+                browsers.
+            </p>
+
+            <!--
+                Note:
+                - The <audio> element is used for sound.
+                - The <video> element is used for video playback.
+                - The <source> element allows multiple media formats.
+                - The poster attribute displays an image before a video starts playing.
+                - Modern browsers often block autoplay unless the media is muted.
+            -->
+
+            <!-- Upcoming Topics:
+                - HTML Embedded Media (iframe)
+            -->
+        </main>
+    </body>
+</html>

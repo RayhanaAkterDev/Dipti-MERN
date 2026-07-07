@@ -1,0 +1,170 @@
+<!--
+    Topic: HTML Ordered List Attributes
+    Purpose: Demonstrates the commonly used attributes of the HTML ordered list element.
+    Features:
+        - type attribute
+        - start attribute
+        - reversed attribute
+        - Combining multiple attributes
+        - Modern HTML recommendation
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates the commonly used attributes of HTML ordered lists."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Ordered List Attributes</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Ordered List Attributes</h1>
+
+            <p>
+                The <code>&lt;ol&gt;</code> element supports several attributes
+                that change how ordered list items are numbered.
+            </p>
+
+            <hr />
+
+            <!-- Type Attribute -->
+            <h2><code>type</code> Attribute</h2>
+
+            <p>
+                The <code>type</code> attribute changes the numbering style of
+                an ordered list.
+            </p>
+
+            <!-- Valid values:
+                1 - Numbers (default)
+                a - Lowercase letters
+                A - Uppercase letters
+                i - Lowercase Roman numerals
+                I - Uppercase Roman numerals
+            -->
+
+            <h3>Default Numbering (1)</h3>
+
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <h3>Lowercase Letters (a)</h3>
+
+            <ol type="a">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <h3>Uppercase Letters (A)</h3>
+
+            <ol type="A">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <h3>Lowercase Roman Numerals (i)</h3>
+
+            <ol type="i">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <h3>Uppercase Roman Numerals (I)</h3>
+
+            <ol type="I">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <hr />
+
+            <!-- Start Attribute -->
+            <h2><code>start</code> Attribute</h2>
+
+            <p>
+                The <code>start</code> attribute specifies the starting number
+                of an ordered list.
+            </p>
+
+            <ol start="5">
+                <li>Install Git</li>
+                <li>Clone the Repository</li>
+                <li>Start Coding</li>
+            </ol>
+
+            <hr />
+
+            <!-- Reversed Attribute -->
+            <h2><code>reversed</code> Attribute</h2>
+
+            <p>
+                The <code>reversed</code> attribute displays the list in
+                descending order.
+            </p>
+
+            <ol reversed>
+                <li>Deploy the Project</li>
+                <li>Test the Application</li>
+                <li>Write the Code</li>
+            </ol>
+
+            <hr />
+
+            <!-- Combining Multiple Attributes -->
+            <h2>Combining Multiple Attributes</h2>
+
+            <p>Multiple ordered list attributes can be used together.</p>
+
+            <ol type="I" start="5" reversed>
+                <li>Final Review</li>
+                <li>Testing</li>
+                <li>Development</li>
+            </ol>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+            <h2>Modern HTML Recommendation</h2>
+
+            <p>
+                In older versions of HTML, the <code>type</code> attribute could
+                also be used with the <code>&lt;ul&gt;</code> element to change
+                bullet styles. However, this usage is obsolete in HTML5.
+            </p>
+
+            <p>
+                In modern HTML, bullet styles should be changed using CSS with
+                the <code>list-style-type</code> property instead.
+            </p>
+
+            <!--
+                Common CSS list-style-type values:
+
+                - disc (default)
+                - circle
+                - square
+                - none
+
+                These will be covered in the CSS Foundations section.
+            -->
+        </main>
+    </body>
+</html>

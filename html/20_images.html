@@ -1,0 +1,160 @@
+<!--
+    Topic: HTML Images
+    Purpose: Demonstrates how to display images in HTML using the <img> element.
+    Features:
+        - Local images
+        - Online images
+        - Relative and absolute image paths
+        - Common image attributes
+        - Figure and figcaption
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates how to display images using the HTML img element."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Images</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Images</h1>
+
+            <p>
+                The <code>&lt;img&gt;</code> element is used to display images
+                on a webpage.
+            </p>
+
+            <hr />
+
+            <!-- Image Paths -->
+
+            <h2>Image Paths</h2>
+
+            <p>
+                Images can be loaded using either a relative path or an absolute
+                URL.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Relative Path:</strong> Loads an image from the same
+                    website or project.
+                </li>
+
+                <li>
+                    <strong>Absolute URL:</strong> Loads an image from another
+                    website using its complete web address.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- Common Image Attributes -->
+
+            <h2>Common Image Attributes</h2>
+
+            <p>
+                The following attributes are commonly used with the
+                <code>&lt;img&gt;</code> element:
+            </p>
+
+            <ul>
+                <li><code>src</code> - specifies the image location.</li>
+
+                <li>
+                    <code>alt</code> - provides alternative text if the image
+                    cannot be displayed.
+                </li>
+
+                <li><code>width</code> - specifies the image width.</li>
+
+                <li><code>height</code> - specifies the image height.</li>
+
+                <li>
+                    <code>title</code> - displays additional information when the
+                    user hovers over the image.
+                </li>
+
+                <li>
+                    <code>loading="lazy"</code> - delays loading images until they
+                    are needed, improving page performance.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- Example Images -->
+
+            <h2>Example Images</h2>
+
+            <h3>Relative Path Image</h3>
+
+            <figure>
+                <img
+                    src="../../assets/images/dog-image.jpeg"
+                    alt="A dog sitting on the ground"
+                    width="400"
+                    loading="lazy"
+                />
+
+                <figcaption>
+                    Local image loaded using a relative path.
+                </figcaption>
+            </figure>
+
+            <br />
+
+            <h3>Absolute URL Image</h3>
+
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1746908592757-2c1d682b71db?q=80&w=1200&auto=format&fit=crop"
+                    alt="Mountain landscape"
+                    width="500"
+                    title="Image from Unsplash"
+                    loading="lazy"
+                />
+
+                <figcaption>
+                    Online image loaded using an absolute URL.
+                </figcaption>
+            </figure>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+
+            <p>
+                <strong>Modern HTML Recommendation:</strong>
+                Always provide meaningful <code>alt</code> text for images and
+                use <code>&lt;figure&gt;</code> with
+                <code>&lt;figcaption&gt;</code> when the image needs a caption.
+            </p>
+
+            <!--
+                Note:
+                - Relative paths are commonly used for images stored within your project.
+                - Absolute URLs are useful when loading images from another website.
+                - The <figure> element groups an image with its caption.
+                - The <figcaption> element provides a description or caption for the image.
+            -->
+
+            <!-- Upcoming Topics:
+                - HTML Audio & Video
+                - HTML Embedded Media (iframe)
+            -->
+        </main>
+    </body>
+</html>

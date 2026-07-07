@@ -1,0 +1,195 @@
+<!--
+    Topic: HTML Accessibility (Advanced)
+    Purpose: Demonstrates advanced HTML accessibility techniques for creating accessible web pages.
+    Features:
+        - aria-labelledby
+        - aria-describedby
+        - aria-required
+        - aria-live
+        - aria-atomic
+        - aria-hidden
+        - tabindex
+        - Accessible tables
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates advanced HTML accessibility techniques."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Accessibility (Advanced)</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Accessibility (Advanced)</h1>
+
+            <p>
+                HTML provides additional accessibility features through ARIA
+                (Accessible Rich Internet Applications) attributes. These
+                attributes help assistive technologies better understand web
+                content when semantic HTML alone is not sufficient.
+            </p>
+
+            <hr />
+
+            <!-- aria-labelledby -->
+
+            <h2><code>aria-labelledby</code></h2>
+
+            <p id="profile-heading">Student Profile</p>
+
+            <section aria-labelledby="profile-heading">
+                <p>Name: Rayhana Akter Sumaya</p>
+                <p>Department: Computer Science and Engineering</p>
+            </section>
+
+            <hr />
+
+            <!-- aria-describedby -->
+
+            <h2><code>aria-describedby</code></h2>
+
+            <p id="username-help">
+                Username must contain at least 6 characters.
+            </p>
+
+            <label for="username">Username</label>
+
+            <input type="text" id="username" aria-describedby="username-help" />
+
+            <hr />
+
+            <!-- aria-required -->
+
+            <h2><code>aria-required</code></h2>
+
+            <label for="email">Email Address</label>
+
+            <input type="email" id="email" aria-required="true" />
+
+            <p>
+                The <code>aria-required</code> attribute indicates that an input
+                field is required for users of assistive technologies.
+            </p>
+
+            <hr />
+
+            <!-- aria-live -->
+
+            <h2><code>aria-live</code></h2>
+
+            <div aria-live="polite">
+                Your profile has been updated successfully.
+            </div>
+
+            <p>
+                The <code>aria-live</code> attribute announces dynamic content
+                updates to screen readers.
+            </p>
+
+            <hr />
+
+            <!-- aria-atomic -->
+
+            <h2><code>aria-atomic</code></h2>
+
+            <div aria-live="polite" aria-atomic="true">
+                Download completed successfully.
+            </div>
+
+            <p>
+                The <code>aria-atomic</code> attribute determines whether the
+                entire live region or only the changed content should be
+                announced.
+            </p>
+
+            <hr />
+
+            <!-- aria-hidden -->
+
+            <h2><code>aria-hidden</code></h2>
+
+            <p>
+                Welcome
+                <span aria-hidden="true">🎉</span>
+                to the website!
+            </p>
+
+            <p>
+                The <code>aria-hidden</code> attribute hides decorative content
+                from assistive technologies.
+            </p>
+
+            <hr />
+
+            <!-- tabindex -->
+
+            <h2><code>tabindex</code></h2>
+
+            <button tabindex="0">Submit</button>
+
+            <p>
+                The <code>tabindex</code> attribute controls whether an element
+                can receive keyboard focus.
+            </p>
+
+            <hr />
+
+            <!-- Accessible Table -->
+
+            <h2>Accessible Table</h2>
+
+            <table border="1">
+                <caption>
+                    Student Information
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Department</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Rayhana Akter Sumaya</td>
+                        <td>CSE</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                The <code>&lt;caption&gt;</code> element and the
+                <code>scope</code> attribute improve table accessibility.
+            </p>
+
+            <hr />
+
+            <!-- Modern Recommendation -->
+
+            <p>
+                Modern HTML encourages using semantic HTML elements first. ARIA
+                attributes should only be added when native HTML cannot provide
+                sufficient accessibility information.
+            </p>
+
+            <!-- Related Topics:
+                - HTML Semantic Tags
+                - HTML Forms
+                - HTML Forms (Advanced)
+            -->
+        </main>
+    </body>
+</html>

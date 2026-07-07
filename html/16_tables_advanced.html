@@ -1,0 +1,167 @@
+<!--
+    Topic: HTML Tables (Advanced)
+    Purpose: Demonstrates advanced HTML table elements and attributes.
+    Features:
+        - Table footer
+        - Header cell scope attribute
+        - Column spanning
+        - Row spanning
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates advanced HTML table elements and attributes such as tfoot, scope, colspan, and rowspan."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Tables (Advanced)</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Tables (Advanced)</h1>
+
+            <p>
+                HTML tables provide additional elements and attributes for
+                creating more structured, accessible, and complex tables.
+            </p>
+
+            <hr />
+
+            <!-- Advanced Table Elements and Attributes -->
+
+            <h2>Advanced Table Elements and Attributes</h2>
+
+            <p>
+                Advanced HTML tables commonly use the following elements and
+                attributes:
+                <code>&lt;tfoot&gt;</code>, <code>scope</code>,
+                <code>colspan</code>, and <code>rowspan</code>.
+            </p>
+
+            <h3>Common Advanced Table Elements</h3>
+
+            <ul>
+                <li>
+                    <code>&lt;tfoot&gt;</code> groups footer or summary
+                    information.
+                </li>
+
+                <li>
+                    The <code>scope</code> attribute identifies row and column
+                    header cells.
+                </li>
+
+                <li>
+                    The <code>colspan</code> attribute allows a cell to span
+                    multiple columns.
+                </li>
+
+                <li>
+                    The <code>rowspan</code> attribute allows a cell to span
+                    multiple rows.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- Example Table -->
+
+            <h3>Example Table</h3>
+
+            <p>
+                The following example combines several advanced table features.
+            </p>
+
+            <!--
+                Note:
+                The `scope` attribute connects a header cell (`<th>`) with the
+                data cells (`<td>`) it describes.
+
+                Examples:
+
+                    <th scope="col">Name</th>
+                        ↓
+                    Sumaya
+                    Arafat
+
+                    <th scope="row">Sumaya</th>
+                        →
+                    CSE | A+
+
+                - scope="col" → Header for a column.
+                - scope="row" → Header for a row.
+
+                It does not change the table's appearance.
+            -->
+
+            <table border="1">
+                <caption>
+                    Student Result Summary
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Department</th>
+                        <th scope="col">Student</th>
+                        <th scope="col">Grade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">CSE</th>
+                        <td>Sumaya</td>
+                        <td>A+</td>
+                    </tr>
+
+                    <tr>
+                        <td>Arafat</td>
+                        <td>A</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">EEE</th>
+                        <td colspan="2">25 Students Enrolled</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Total Departments</th>
+                        <td>2</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+
+            <p>
+                <strong>Modern HTML Recommendation:</strong>
+                Use <code>scope</code> with header cells and organize larger
+                tables using <code>&lt;thead&gt;</code>,
+                <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> to
+                improve readability, accessibility, and maintainability.
+            </p>
+
+            <!--
+                Note:
+                HTML tables should only be used for presenting tabular data.
+
+                Modern webpage layouts should be built using CSS Flexbox or
+                CSS Grid instead of tables.
+            -->
+        </main>
+    </body>
+</html>

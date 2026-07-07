@@ -1,0 +1,107 @@
+<!--
+    Topic: HTML Special Links
+    Purpose: Demonstrates special types of hyperlinks created using the HTML anchor (<a>) element.
+    Features:
+        - Email links using mailto:
+        - Telephone links using tel:
+        - Anchor links using id and #
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates special types of hyperlinks in HTML, including email, telephone, and anchor links."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Special Links</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Special Links</h1>
+
+            <p>
+                Besides navigating to web pages, the
+                <code>&lt;a&gt;</code> element can also create links for sending
+                emails, making phone calls, and navigating to specific sections
+                within a web page.
+            </p>
+
+            <hr />
+
+            <!-- Email Links -->
+            <h2>Email Links</h2>
+
+            <p>
+                Use the <code>mailto:</code> URL scheme to open the user's
+                default email application.
+            </p>
+
+            <p>
+                <a href="mailto:support@example.com"> support@example.com </a>
+            </p>
+
+            <hr />
+
+            <!-- Telephone Links -->
+            <h2>Telephone Links</h2>
+
+            <p>
+                Use the <code>tel:</code> URL scheme to initiate a phone call on
+                supported devices.
+            </p>
+
+            <p>
+                <a href="tel:+1234567890"> +1 234 567 890 </a>
+            </p>
+
+            <hr />
+
+            <!-- Anchor Links -->
+            <h2>Anchor Links</h2>
+
+            <p>
+                Anchor links allow users to jump to another section within the
+                same web page.
+            </p>
+
+            <p>
+                <a href="#contact">Go to Contact Section</a>
+            </p>
+
+            <hr />
+
+            <!-- Destination Section -->
+            <h2 id="contact">Contact Section</h2>
+
+            <p>This is the destination of the anchor link.</p>
+
+            <p>
+                <a href="#top">Back to Top</a>
+            </p>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+
+            <p>
+                Email and telephone links improve user experience by allowing
+                users to contact you directly from supported devices.
+            </p>
+
+            <p>
+                Anchor links are useful for navigating long web pages and
+                improving accessibility.
+            </p>
+        </main>
+    </body>
+</html>

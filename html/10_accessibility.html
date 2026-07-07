@@ -1,0 +1,144 @@
+<!--
+    Topic: HTML Accessibility
+    Purpose: Demonstrates the basic principles of creating accessible HTML documents.
+    Features:
+        - Importance of web accessibility
+        - Semantic HTML for accessibility
+        - Skip links
+        - Alternative text for images
+        - Labels for form controls
+        - aria-label attribute
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates the basic principles of HTML accessibility."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Accessibility</title>
+    </head>
+
+    <body>
+        <!-- Skip Link -->
+        <a href="#main-content">Skip to Main Content</a>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <h1>HTML Accessibility</h1>
+
+            <p>
+                Web accessibility ensures that websites can be used by everyone,
+                including people with disabilities. HTML provides several
+                built-in features that help make web pages more accessible.
+            </p>
+
+            <hr />
+
+            <!-- Semantic HTML -->
+            <h2>Semantic HTML</h2>
+
+            <p>
+                Semantic elements describe the purpose of their content,
+                improving accessibility for assistive technologies such as
+                screen readers.
+            </p>
+
+            <p>
+                Examples include
+                <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>,
+                <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.
+            </p>
+
+            <hr />
+
+            <!-- Alternative Text -->
+            <h2>Alternative Text</h2>
+
+            <p>
+                Images should include the <code>alt</code> attribute so screen
+                readers can describe the image when it cannot be seen.
+            </p>
+
+            <img
+                src="images/profile.jpg"
+                alt="Profile photo of Rayhana Akter Sumaya"
+                width="180"
+            />
+
+            <hr />
+
+            <!-- Labels -->
+            <h2>Labels for Form Controls</h2>
+
+            <p>
+                Every form control should have an associated
+                <code>&lt;label&gt;</code> to improve usability and
+                accessibility.
+            </p>
+
+            <label for="email">Email Address:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+            />
+
+            <hr />
+
+            <!-- aria-label -->
+            <h2>Using <code>aria-label</code></h2>
+
+            <p>
+                The <code>aria-label</code> attribute provides an accessible
+                name when visible text is unavailable or insufficient.
+            </p>
+
+            <button aria-label="Close">✕</button>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+
+            <p>
+                Writing semantic HTML and providing meaningful text alternatives
+                are the foundation of creating accessible web pages. In many
+                cases, semantic HTML alone provides excellent accessibility
+                without requiring additional ARIA attributes.
+            </p>
+
+            <hr />
+
+            <!-- More Accessibility Features -->
+
+            <p>
+                <mark>
+                    HTML accessibility includes many more techniques than the
+                    ones demonstrated in this example.
+                </mark>
+            </p>
+
+            <p>
+                Some commonly used accessibility features include
+                <code>role</code>, <code>tabindex</code>,
+                <code>aria-labelledby</code>, <code>aria-describedby</code>,
+                <code>aria-required</code>, <code>aria-live</code>,
+                <code>aria-hidden</code>, and proper keyboard navigation.
+            </p>
+
+            <!-- Upcoming Topic:
+                - HTML Accessibility (Advanced)
+            -->
+        </main>
+    </body>
+</html>

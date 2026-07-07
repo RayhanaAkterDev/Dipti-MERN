@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates common HTML input types and attributes."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Input Types</title>
+    </head>
+    <body>
+        <main>
+            <h1>HTML Input Types</h1>
+
+            <p>
+                The <code>&lt;input&gt;</code> element supports many
+                <code>type</code> values for collecting different kinds of user
+                input.
+            </p>
+
+            <hr />
+
+            <h2>Common Input Types</h2>
+            <ul>
+                <li><code>text</code></li>
+                <li><code>password</code></li>
+                <li><code>email</code></li>
+                <li><code>number</code></li>
+                <li><code>tel</code></li>
+                <li><code>url</code></li>
+                <li><code>search</code></li>
+                <li><code>date</code></li>
+                <li><code>time</code></li>
+                <li><code>datetime-local</code></li>
+                <li><code>month</code></li>
+                <li><code>week</code></li>
+                <li><code>color</code></li>
+                <li><code>range</code></li>
+                <li><code>file</code></li>
+                <li><code>checkbox</code></li>
+                <li><code>radio</code></li>
+                <li><code>hidden</code></li>
+                <li><code>submit</code></li>
+                <li><code>reset</code></li>
+                <li><code>button</code></li>
+                <li><code>image</code></li>
+            </ul>
+
+            <hr />
+
+            <h2>Example Form</h2>
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Input Types Demo</legend>
+
+                    <p>
+                        <label for="name">Text</label><br /><input
+                            type="text"
+                            id="name"
+                            placeholder="John Doe"
+                        />
+                    </p>
+                    <p>
+                        <label for="pass">Password</label><br /><input
+                            type="password"
+                            id="pass"
+                        />
+                    </p>
+                    <p>
+                        <label for="mail">Email</label><br /><input
+                            type="email"
+                            id="mail"
+                        />
+                    </p>
+                    <p>
+                        <label for="age">Number</label><br /><input
+                            type="number"
+                            id="age"
+                        />
+                    </p>
+                    <p>
+                        <label for="phone">Telephone</label><br /><input
+                            type="tel"
+                            id="phone"
+                        />
+                    </p>
+                    <p>
+                        <label for="site">Website</label><br /><input
+                            type="url"
+                            id="site"
+                        />
+                    </p>
+                    <p>
+                        <label for="search">Search</label><br /><input
+                            type="search"
+                            id="search"
+                        />
+                    </p>
+                    <p>
+                        <label for="date">Date</label><br /><input
+                            type="date"
+                            id="date"
+                        />
+                    </p>
+                    <p>
+                        <label for="time">Time</label><br /><input
+                            type="time"
+                            id="time"
+                        />
+                    </p>
+                    <p>
+                        <label for="dt">Date &amp; Time</label><br /><input
+                            type="datetime-local"
+                            id="dt"
+                        />
+                    </p>
+                    <p>
+                        <label for="month">Month</label><br /><input
+                            type="month"
+                            id="month"
+                        />
+                    </p>
+                    <p>
+                        <label for="week">Week</label><br /><input
+                            type="week"
+                            id="week"
+                        />
+                    </p>
+                    <p>
+                        <label for="color">Color</label><br /><input
+                            type="color"
+                            id="color"
+                        />
+                    </p>
+                    <p>
+                        <label for="range">Range</label><br /><input
+                            type="range"
+                            id="range"
+                        />
+                    </p>
+                    <p>
+                        <label for="file">File</label><br /><input
+                            type="file"
+                            id="file"
+                        />
+                    </p>
+
+                    <p>
+                        Gender:<br />
+                        <label><input type="radio" name="gender" /> Male</label>
+                        <label
+                            ><input type="radio" name="gender" /> Female</label
+                        >
+                    </p>
+
+                    <p>
+                        Skills:<br />
+                        <label><input type="checkbox" /> HTML</label>
+                        <label><input type="checkbox" /> CSS</label>
+                        <label><input type="checkbox" /> JavaScript</label>
+                    </p>
+
+                    <input type="hidden" name="user-id" value="12345" />
+
+                    <p>
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Reset" />
+                        <input type="button" value="Click Me" />
+                    </p>
+
+                    <p>
+                        <input
+                            type="image"
+                            src="../../assets/images/submit-button.png"
+                            alt="Submit"
+                            width="120"
+                        />
+                    </p>
+                </fieldset>
+            </form>
+
+            <hr />
+
+            <h2>Common Input Attributes</h2>
+            <ul>
+                <li><code>placeholder</code> displays a hint.</li>
+                <li><code>value</code> sets a default value.</li>
+                <li><code>readonly</code> prevents editing.</li>
+                <li><code>disabled</code> disables the input.</li>
+                <li><code>autocomplete</code> controls browser autofill.</li>
+                <li><code>autofocus</code> focuses an input on page load.</li>
+                <li>
+                    <code>checked</code> preselects a checkbox or radio button.
+                </li>
+                <li>
+                    <code>multiple</code> allows multiple file or email
+                    selections.
+                </li>
+                <li><code>accept</code> restricts upload file types.</li>
+            </ul>
+
+            <h3>Attribute Examples</h3>
+            <form>
+                <p>
+                    <label>Placeholder & Autofocus</label><br /><input
+                        type="text"
+                        placeholder="Enter username"
+                        autofocus
+                    />
+                </p>
+                <p>
+                    <label>Readonly</label><br /><input
+                        type="text"
+                        value="Bangladesh"
+                        readonly
+                    />
+                </p>
+                <p>
+                    <label>Disabled</label><br /><input
+                        type="text"
+                        value="DIIT"
+                        disabled
+                    />
+                </p>
+                <p>
+                    <label
+                        ><input type="checkbox" checked /> Receive
+                        Newsletter</label
+                    >
+                </p>
+                <p>
+                    <label>Multiple Files</label><br /><input
+                        type="file"
+                        multiple
+                        accept=".pdf,.doc,.docx"
+                    />
+                </p>
+            </form>
+
+            <hr />
+            <p>
+                <strong>Modern HTML Recommendation:</strong> Use the most
+                appropriate <code>type</code> and common attributes to improve
+                usability and accessibility. Validation attributes are covered
+                separately.
+            </p>
+        </main>
+    </body>
+</html>

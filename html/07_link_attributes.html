@@ -1,0 +1,121 @@
+<!--
+    Topic: HTML Link Attributes
+    Purpose: Demonstrates commonly used attributes of the HTML anchor (<a>) element.
+    Features:
+        - href attribute
+        - target attribute
+        - rel attribute
+        - title attribute
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates commonly used attributes of the HTML anchor element."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Link Attributes</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Link Attributes</h1>
+
+            <p>
+                The <code>&lt;a&gt;</code> element supports several attributes
+                that define the destination and behavior of a hyperlink.
+            </p>
+
+            <hr />
+
+            <!-- href Attribute -->
+            <h2><code>href</code> Attribute</h2>
+
+            <p>
+                The <code>href</code> attribute specifies the destination of the
+                hyperlink.
+            </p>
+
+            <p>
+                <a href="https://www.example.com">Visit Example Website</a>
+            </p>
+
+            <hr />
+
+            <!-- target Attribute -->
+            <h2><code>target</code> Attribute</h2>
+
+            <p>
+                The <code>target</code> attribute specifies where the linked
+                document will open.
+            </p>
+
+            <p>
+                <a
+                    href="https://www.example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Open Example Website in a New Tab
+                </a>
+            </p>
+
+            <hr />
+
+            <!-- rel Attribute -->
+            <h2><code>rel</code> Attribute</h2>
+
+            <p>
+                The <code>rel</code> attribute defines the relationship between
+                the current page and the linked resource.
+            </p>
+
+            <p>
+                When using <code>target="_blank"</code>, it is recommended to
+                include <code>rel="noopener noreferrer"</code> for improved
+                security and privacy.
+            </p>
+
+            <hr />
+
+            <!-- title Attribute -->
+            <h2><code>title</code> Attribute</h2>
+
+            <p>
+                The <code>title</code> attribute provides additional information
+                about a link. It is commonly displayed as a tooltip when the
+                user hovers over the link.
+            </p>
+
+            <p>
+                <a href="https://www.example.com" title="Visit Example Website">
+                    Hover over this link
+                </a>
+            </p>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+            <p>
+                The <code>href</code> attribute is required to create a working
+                hyperlink.
+            </p>
+
+            <p>
+                When opening links in a new tab using
+                <code>target="_blank"</code>, include
+                <code>rel="noopener noreferrer"</code> as a recommended modern
+                practice.
+            </p>
+        </main>
+    </body>
+</html>

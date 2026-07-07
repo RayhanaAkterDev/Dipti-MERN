@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Additional HTML features and useful elements."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Additional Features</title>
+    </head>
+    <body>
+        <main>
+            <h1>HTML Additional Features</h1>
+
+            <p>
+                HTML provides many additional elements and attributes that are
+                useful in specific situations. While beginners may not use them
+                every day, knowing they exist will help you as you continue
+                learning web development.
+            </p>
+
+            <hr />
+
+            <h2>1. HTML Comments</h2>
+
+            <p>
+                Comments are ignored by the browser and are mainly used to
+                document code.
+            </p>
+
+            <pre><code>&lt;!-- This is a single-line comment --&gt;
+
+&lt;!--
+    This is a
+    multi-line comment.
+--&gt;
+</code></pre>
+
+            <hr />
+
+            <h2>2. HTML Character Entities</h2>
+
+            <p>
+                Some characters have special meaning in HTML. Use character
+                entities to display them correctly.
+            </p>
+
+            <table border="1">
+                <tr>
+                    <th>Entity</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td><code>&amp;amp;</code></td>
+                    <td>&amp;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;lt;</code></td>
+                    <td>&lt;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;gt;</code></td>
+                    <td>&gt;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;quot;</code></td>
+                    <td>&quot;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;apos;</code></td>
+                    <td>&apos;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;nbsp;</code></td>
+                    <td>Non-breaking space</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;copy;</code></td>
+                    <td>&copy;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;reg;</code></td>
+                    <td>&reg;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;trade;</code></td>
+                    <td>&trade;</td>
+                </tr>
+                <tr>
+                    <td><code>&amp;euro;</code></td>
+                    <td>&euro;</td>
+                </tr>
+            </table>
+
+            <hr />
+
+            <h2>3. Additional HTML Elements</h2>
+
+            <p>
+                The following HTML elements are less commonly used but can be
+                useful in specific situations.
+            </p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <code>&lt;details&gt;</code> +
+                            <code>&lt;summary&gt;</code>
+                        </td>
+                        <td>
+                            Creates a collapsible section that users can expand
+                            or collapse.
+                        </td>
+                        <td>
+                            <details>
+                                <summary>Click to expand</summary>
+                                <p>Hidden content.</p>
+                            </details>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;progress&gt;</code></td>
+                        <td>Displays the progress of a task.</td>
+                        <td>
+                            <progress value="70" max="100"></progress>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;meter&gt;</code></td>
+                        <td>Represents a measurement within a known range.</td>
+                        <td>
+                            <meter value="0.8">80%</meter>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;picture&gt;</code></td>
+                        <td>
+                            Displays responsive images or different image
+                            formats based on browser support.
+                        </td>
+                        <td>
+                            <code>&lt;picture&gt;...&lt;/picture&gt;</code>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;abbr&gt;</code></td>
+                        <td>Defines an abbreviation or acronym.</td>
+                        <td>
+                            <abbr title="HyperText Markup Language">HTML</abbr>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;time&gt;</code></td>
+                        <td>Represents a date or time.</td>
+                        <td>
+                            <time datetime="2026-07-07">July 7, 2026</time>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;kbd&gt;</code></td>
+                        <td>Represents keyboard input.</td>
+                        <td>Press <kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;samp&gt;</code></td>
+                        <td>Represents output from a computer program.</td>
+                        <td>
+                            <samp>File uploaded successfully.</samp>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;var&gt;</code></td>
+                        <td>
+                            Represents a variable in mathematics or programming.
+                        </td>
+                        <td><var>x</var> + <var>y</var> = 10</td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;cite&gt;</code></td>
+                        <td>Represents the title of a creative work.</td>
+                        <td>
+                            <cite>Clean Code</cite>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;address&gt;</code></td>
+                        <td>
+                            Represents contact information for an author or
+                            organization.
+                        </td>
+                        <td>
+                            <address>rayhana@example.com</address>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <h2>4. Useful Global Attributes</h2>
+
+            <ul>
+                <li><code>id</code> - Uniquely identifies an element.</li>
+                <li>
+                    <code>class</code> - Groups elements for CSS and JavaScript.
+                </li>
+                <li>
+                    <code>title</code> - Provides additional information on
+                    hover.
+                </li>
+                <li><code>hidden</code> - Hides an element.</li>
+                <li>
+                    <code>tabindex</code> - Controls keyboard navigation order.
+                </li>
+                <li><code>contenteditable</code> - Makes content editable.</li>
+                <li>
+                    <code>draggable</code> - Allows an element to be dragged.
+                </li>
+                <li>
+                    <code>spellcheck</code> - Enables or disables spell
+                    checking.
+                </li>
+                <li>
+                    <code>translate</code> - Indicates whether content should be
+                    translated.
+                </li>
+            </ul>
+
+            <hr />
+
+            <h2>5. Learn Next</h2>
+
+            <p>
+                Some HTML features are closely related to CSS and JavaScript and
+                are usually learned later:
+            </p>
+
+            <ul>
+                <li><code>data-*</code> attributes → JavaScript DOM</li>
+                <li><code>&lt;script&gt;</code> → JavaScript</li>
+                <li><code>&lt;canvas&gt;</code> → JavaScript Graphics</li>
+                <li>SVG → HTML + CSS</li>
+                <li>Web Components → Advanced HTML &amp; JavaScript</li>
+            </ul>
+        </main>
+    </body>
+</html>

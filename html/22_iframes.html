@@ -1,0 +1,142 @@
+<!--
+    Topic: HTML Embedded Media (iframe)
+    Purpose: Demonstrates how to embed external webpages and media using the HTML iframe element.
+    Features:
+        - Basic iframe
+        - Embedded YouTube video
+        - Embedded Google Maps
+        - Common iframe attributes
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates how to embed external webpages and media using the HTML iframe element."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Embedded Media (iframe)</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Embedded Media (iframe)</h1>
+
+            <p>
+                The <code>&lt;iframe&gt;</code> element is used to embed another
+                webpage or external content inside the current webpage.
+            </p>
+
+            <hr />
+
+            <!-- Common iframe Attributes -->
+
+            <h2>Common iframe Attributes</h2>
+
+            <p>
+                The following attributes are commonly used with the
+                <code>&lt;iframe&gt;</code> element.
+            </p>
+
+            <ul>
+                <li>
+                    <code>src</code> - specifies the webpage or resource to embed.
+                </li>
+
+                <li><code>width</code> - specifies the iframe width.</li>
+
+                <li><code>height</code> - specifies the iframe height.</li>
+
+                <li>
+                    <code>title</code> - provides a description for accessibility.
+                </li>
+
+                <li>
+                    <code>loading="lazy"</code> - delays loading the iframe until
+                    it is close to the viewport.
+                </li>
+
+                <li>
+                    <code>allowfullscreen</code> - allows supported content (such
+                    as videos) to enter fullscreen mode.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- Basic iframe -->
+
+            <h2>Basic iframe</h2>
+
+            <iframe
+                src="https://example.com"
+                title="Example Website"
+                width="600"
+                height="250"
+            >
+            </iframe>
+
+            <hr />
+
+            <!-- Embedded YouTube Video -->
+
+            <h2>Embedded YouTube Video</h2>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/CFiCdpnn-jo"
+                title="HTML Tutorial Video"
+                loading="lazy"
+                allowfullscreen
+            >
+            </iframe>
+
+            <hr />
+
+            <!-- Embedded Google Map -->
+
+            <h2>Embedded Google Map</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.788488994873!2d90.37379437589715!3d23.754920788601673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8af6e44c66f%3A0x3f3d56a0d14d53b4!2sDhaka!5e0!3m2!1sen!2sbd!4v1751723065342!5m2!1sen!2sbd"
+                width="600"
+                height="350"
+                title="Location on Google Maps"
+                loading="lazy"
+            >
+            </iframe>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+
+            <p>
+                <strong>Modern HTML Recommendation:</strong>
+                Always provide a meaningful <code>title</code> attribute for
+                iframes to improve accessibility, and use
+                <code>loading="lazy"</code> when appropriate to improve page
+                performance.
+            </p>
+
+            <!--
+                Note:
+                - An iframe embeds another webpage inside the current webpage.
+                - Common uses include YouTube videos, Google Maps, PDFs, online documents, and interactive web applications.
+                - Some websites prevent embedding for security reasons, so not every webpage can be displayed inside an iframe.
+            -->
+
+            <!-- Next Topic:
+                - HTML Forms
+            -->
+        </main>
+    </body>
+</html>

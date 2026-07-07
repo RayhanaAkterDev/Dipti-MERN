@@ -1,0 +1,182 @@
+<!--
+    Topic: HTML Form Validation
+    Purpose: Demonstrates native HTML5 form validation without JavaScript.
+    Features:
+        - required
+        - minlength and maxlength
+        - min and max
+        - pattern
+        - readonly and disabled
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates native HTML5 form validation."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Form Validation</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Form Validation</h1>
+
+            <p>
+                HTML provides built-in validation attributes that help ensure
+                users enter valid data before submitting a form.
+            </p>
+
+            <hr />
+
+            <!-- Common Validation Attributes -->
+
+            <h2>Common Validation Attributes</h2>
+
+            <p>
+                Native HTML validation commonly uses the following attributes:
+                <code>required</code>, <code>minlength</code>,
+                <code>maxlength</code>, <code>min</code>, <code>max</code>,
+                <code>pattern</code>, <code>readonly</code>, and
+                <code>disabled</code>.
+            </p>
+
+            <h3>Validation Attributes</h3>
+
+            <ul>
+                <li><code>required</code> - makes a field mandatory.</li>
+
+                <li>
+                    <code>minlength</code> - sets the minimum number of
+                    characters.
+                </li>
+
+                <li>
+                    <code>maxlength</code> - sets the maximum number of
+                    characters.
+                </li>
+
+                <li><code>min</code> - defines the smallest allowed value.</li>
+
+                <li><code>max</code> - defines the largest allowed value.</li>
+
+                <li>
+                    <code>pattern</code> - validates input using a regular
+                    expression.
+                </li>
+
+                <li><code>readonly</code> - makes a field read-only.</li>
+
+                <li><code>disabled</code> - disables a form control.</li>
+            </ul>
+
+            <hr />
+
+            <!-- Example Form -->
+
+            <h2>Example Form</h2>
+
+            <p>
+                Try submitting the form without completing the required fields
+                to see the browser's built-in validation messages.
+            </p>
+
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Registration Form</legend>
+
+                    <p>
+                        <label for="username">Username:</label><br />
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            required
+                            minlength="5"
+                            maxlength="15"
+                            pattern="[A-Za-z0-9]+"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br />
+                        <input type="email" id="email" name="email" required />
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label><br />
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                            minlength="6"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="age">Age:</label><br />
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="18"
+                            max="60"
+                            required
+                        />
+                    </p>
+
+                    <p>
+                        <label for="country">Country:</label><br />
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            value="Bangladesh"
+                            readonly
+                        />
+                    </p>
+
+                    <p>
+                        <label for="member-id">Member ID:</label><br />
+                        <input
+                            type="text"
+                            id="member-id"
+                            value="MEM-1025"
+                            disabled
+                        />
+                    </p>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+
+            <hr />
+
+            <p>
+                <strong>Modern HTML Recommendation:</strong>
+                Use native HTML validation whenever possible. It improves user
+                experience and reduces the need for JavaScript for simple forms.
+            </p>
+
+            <!--
+                Note:
+                HTML validation runs in the browser before the form is submitted.
+
+                It helps users correct mistakes early but should not replace
+                server-side validation, since client-side validation can be
+                bypassed.
+            -->
+        </main>
+    </body>
+</html>

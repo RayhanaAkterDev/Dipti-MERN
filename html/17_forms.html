@@ -1,0 +1,238 @@
+<!--
+    Topic: HTML Forms
+    Purpose: Demonstrates the basic structure of HTML forms.
+    Features:
+        - Form structure
+        - Fieldset and legend
+        - Labels and form controls
+        - Text input
+        - Textarea
+        - Select menu
+        - Option groups
+        - Datalist
+        - Form buttons
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-06
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates the basic structure of HTML forms."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Forms</title>
+    </head>
+
+    <body>
+        <!-- Main Content -->
+        <main>
+            <h1>HTML Forms</h1>
+
+            <p>
+                The <code>&lt;form&gt;</code> element is used to collect user
+                input and submit data to a server.
+            </p>
+
+            <hr />
+
+            <!-- Basic Form Structure -->
+
+            <h2>Basic Form Structure</h2>
+
+            <p>
+                A basic HTML form commonly uses the following elements:
+                <code>&lt;form&gt;</code>, <code>&lt;fieldset&gt;</code>,
+                <code>&lt;legend&gt;</code>, <code>&lt;label&gt;</code>,
+                <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>,
+                <code>&lt;select&gt;</code>, <code>&lt;option&gt;</code>,
+                <code>&lt;optgroup&gt;</code>, <code>&lt;datalist&gt;</code>,
+                and <code>&lt;button&gt;</code>.
+            </p>
+
+            <!-- Common Form Elements -->
+
+            <h3>Common Form Elements</h3>
+
+            <ul>
+                <li><code>&lt;form&gt;</code> - creates the form container.</li>
+
+                <li>
+                    <code>&lt;fieldset&gt;</code> - groups related form controls.
+                </li>
+
+                <li>
+                    <code>&lt;legend&gt;</code> - provides a title for a fieldset.
+                </li>
+
+                <li><code>&lt;label&gt;</code> - describes a form control.</li>
+
+                <li><code>&lt;input&gt;</code> - creates an input field.</li>
+
+                <li>
+                    <code>&lt;textarea&gt;</code> - creates a multi-line text
+                    input.
+                </li>
+
+                <li><code>&lt;select&gt;</code> - creates a drop-down list.</li>
+
+                <li>
+                    <code>&lt;option&gt;</code> - defines an item inside a
+                    drop-down list.
+                </li>
+
+                <li>
+                    <code>&lt;optgroup&gt;</code> - groups related options inside
+                    a drop-down list.
+                </li>
+
+                <li>
+                    <code>&lt;datalist&gt;</code> - provides predefined
+                    suggestions for an input field.
+                </li>
+
+                <li><code>&lt;button&gt;</code> - creates a clickable button.</li>
+            </ul>
+
+            <hr />
+
+            <!-- Example Form -->
+
+            <h2>Example Form</h2>
+
+            <form action="/submit" method="post">
+                <fieldset>
+                    <legend>Student Registration</legend>
+
+                    <p>
+                        <label for="name">Full Name:</label><br />
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                        />
+                    </p>
+
+                    <p>
+                        <label for="department">Department:</label><br />
+
+                        <select id="department" name="department">
+                            <option value="">-- Select Department --</option>
+
+                            <optgroup label="Engineering">
+                                <option value="cse">
+                                    Computer Science & Engineering
+                                </option>
+
+                                <option value="eee">
+                                    Electrical & Electronic Engineering
+                                </option>
+                            </optgroup>
+
+                            <optgroup label="Business">
+                                <option value="bba">
+                                    Bachelor of Business Administration
+                                </option>
+
+                                <option value="accounting">Accounting</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="language">
+                            Favorite Programming Language:
+                        </label>
+                        <br />
+
+                        <input
+                            list="languages"
+                            id="language"
+                            name="language"
+                            placeholder="Choose or type"
+                        />
+
+                        <datalist id="languages">
+                            <option value="HTML"></option>
+                            <option value="CSS"></option>
+                            <option value="JavaScript"></option>
+                            <option value="Python"></option>
+                            <option value="Java"></option>
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label><br />
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            cols="40"
+                            placeholder="Write your message..."
+                        ></textarea>
+                    </p>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+
+            <hr />
+
+            <!-- Common Form Attributes -->
+
+            <h2>Common Form Attributes</h2>
+
+            <ul>
+                <li>
+                    <code>action</code> specifies where the form data is sent.
+                </li>
+
+                <li>
+                    <code>method</code> specifies how the form data is sent,
+                    usually <code>GET</code> or <code>POST</code>.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- Modern HTML Recommendation -->
+
+            <p>
+                <strong>Modern HTML Recommendation:</strong>
+                Always associate a
+                <code>&lt;label&gt;</code>
+                with its corresponding form control using the
+                <code>for</code> and
+                <code>id</code>
+                attributes. This improves accessibility and makes forms easier
+                to use.
+            </p>
+
+            <!--
+                Note:
+                This file demonstrates the basic structure of HTML forms and
+                common form elements.
+
+                Different <input> types such as email, password, date, file,
+                checkbox, radio, and others are covered in the next topic.
+
+                Native HTML validation attributes are covered separately in
+                "HTML Form Validation".
+            -->
+
+            <!-- Upcoming Topics:
+                - HTML Input Types
+                - HTML Form Validation
+            -->
+        </main>
+    </body>
+</html>
