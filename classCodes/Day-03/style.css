@@ -44,7 +44,7 @@ h1 {
     color: blue;
     text-align: center;
     text-decoration: underline;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 5px;
     word-spacing: 10px;
     line-height: 1.5;
@@ -66,15 +66,24 @@ h1 {
     text-decoration-thickness: 2px;
     */
     text-decoration: overline underline wavy blue 2px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     word-spacing: 5px;
-    line-height: 48px;
+    line-height: 56px;
     text-shadow: 1px 1px 2px #ff69b4;
     font-weight: 900;
     font-variant: small-caps;
     font-style: italic;
-    /* font-size: 22px; */
+    font-size: 28px;
     font-family: 'Yuyu Short', sans-serif;
-    text-align-last: right;
+    text-align-last: center;
+    margin-bottom: 30px;
+}
+
+.custom-block {
+    /* display: block; */
+    display: inline-block;
+    width: 200px;
+    background-color: hotpink;
+    /* NOTE: margin: 0 auto only works with block-level elements; it's not workable in both inline and inline-block elements */
 }
