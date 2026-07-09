@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuyu+Short&display=swap');
+
 .france {
     width: 200px;
     height: 200px;
@@ -5,5 +7,74 @@
 }
 
 .box-model {
+    /*
+    border-width: 6px;
+    border-style: solid;
+    border-color: blue;
+    */
+    border: 6px solid blue;
+    width: max-content;
+
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 20px 30px 40px 50px;
+    margin: 0 auto;
+    margin: 10px 20px 30px;
+    margin: -50px auto 0px
+    */
     margin: 20px;
+    padding: 20px;
+}
+
+/* CSS text properties */
+
+/* color */
+/* text-align */
+/* text-decoration */
+/* text-transform */
+/* letter-spacing */
+/* word-spacing */
+/* line-height */
+/* text-shadow */
+
+h1 {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px #ff69b4;
+}
+
+.main {
+    width: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    /* border-radius: 6px 12px 24px 48px; */
+    border-radius: 8px;
+    text-indent: 60px;
+    text-align: justify;
+    /*
+    text-decoration: overline underline;
+    text-decoration-style: dotted;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+    */
+    text-decoration: overline underline wavy blue 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 48px;
+    text-shadow: 1px 1px 2px #ff69b4;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-style: italic;
+    /* font-size: 22px; */
+    font-family: 'Yuyu Short', sans-serif;
+    text-align-last: right;
 }

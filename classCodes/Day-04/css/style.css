@@ -1,0 +1,91 @@
+/* cdn link - content deliver network */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap');
+
+body {
+    text-align: center;
+    border: 2px solid black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.para {
+    padding: 20px;
+    font-size: 48px;
+    margin: 20px auto;
+    font-family: 'Yuyu Short', sans-serif;
+}
+
+.font-robot {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 60px;
+}
+
+.main {
+    width: 300px;
+    height: 300px;
+    background-color: hotpink;
+    position: relative;
+    bottom: -20px;
+    right: 0;
+}
+
+/* z-index won't work without a positioned ancestor */
+/* default static */
+/* position relative and absolute must be parent child */
+.pain {
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    position: relative;
+    bottom: 0;
+    right: -30px;
+}
+
+.rain {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* position fixed */
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: auto;
+    background-color: green;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.demo-text {
+    font-size: 48px;
+    font-family: 'Yuyu Short', sans-serif;
+}
+
+.abul {
+    width: 30px;
+    height: 300px;
+    background-color: yellow;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+.babul {
+    width: 30px;
+    height: 30px;
+    background-color: purple;
+    position: sticky;
+    top: 60px;
+}
