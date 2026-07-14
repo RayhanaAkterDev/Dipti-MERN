@@ -1,0 +1,124 @@
+ <!-- Use of Font Family -->
+        <!-- <p class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            nostrum repellendus deserunt expedita eum! Fugit numquam odio
+            corrupti enim architecto fugiat aut voluptatum, reiciendis optio
+            repudiandae labore rerum, ipsam asperiores.
+        </p>
+
+        <p class="font-robot">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            porro, culpa excepturi aperiam deleniti aliquam quaerat perferendis
+            quas in corporis explicabo necessitatibus suscipit id dolore. Neque
+            recusandae minima quis vero.
+        </p> -->
+
+        <!-- CSS Positioning -->
+        <!-- <div class="main"></div>
+
+        <div class="pain">
+            <div class="rain"></div>
+        </div>
+
+        <p class="demo-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde
+            commodi iure ipsa numquam facere ipsum quod excepturi et
+            reprehenderit provident nihil distinctio a esse velit error,
+            consequuntur molestias perspiciatis consectetur! Nulla beatae
+            obcaecati molestiae iste quam, hic odit quibusdam autem dolor
+            cupiditate laudantium, odio possimus nostrum, eos rem eum sequi?
+            Dolore sunt voluptas distinctio omnis beatae molestiae at commodi
+            qui nesciunt, nisi harum debitis maiores maxime dolor expedita
+            laboriosam impedit? Quas distinctio asperiores quae perspiciatis sit
+            dignissimos soluta, explicabo nulla consectetur? Maxime recusandae
+            sapiente voluptas odio, cum laboriosam alias magnam laborum incidunt
+            corporis libero sequi nisi cupiditate repellat natus.
+        </p>
+
+        <div class="fixed">
+            <a href="#body-top">Fixed Position</a>
+        </div>
+
+        <div class="abul">
+            <div class="babul"></div>
+        </div> -->
+
+        =================================================
+
+.para {
+    padding: 20px;
+    font-size: 48px;
+    /* margin: 20px auto; */
+    font-family: 'Yuyu Short', sans-serif;
+}
+
+.font-robot {
+    font-family: 'Roboto', sans-serif;
+    /* margin-bottom: 60px; */
+}
+
+/*
+
+.main {
+    width: 300px;
+    height: 300px;
+    background-color: hotpink;
+    position: relative;
+    bottom: -20px;
+    right: 0;
+    z-index: 1;
+}
+
+.pain {
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    position: relative;
+    bottom: 0;
+    right: -30px;
+}
+
+.rain {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: auto;
+    background-color: green;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.demo-text {
+    font-size: 48px;
+    font-family: 'Yuyu Short', sans-serif;
+}
+
+.abul {
+    width: 30px;
+    height: 300px;
+    background-color: yellow;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+.babul {
+    width: 30px;
+    height: 30px;
+    background-color: purple;
+    position: sticky;
+    top: 60px;
+}
+
+*/
