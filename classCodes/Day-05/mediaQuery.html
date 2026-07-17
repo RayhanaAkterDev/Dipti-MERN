@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Media Query</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 100%;
+                padding: 24px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+
+            .container > div {
+                padding: 24px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+            }
+
+            @media screen and (max-width: 640px) {
+                .container {
+                    grid-template-columns: 1fr;
+                    gap: 12px;
+                }
+
+                .container > div {
+                    padding: 12px;
+                }
+            }
+
+            @media screen and (min-width: 640px) and (max-width: 1024px) {
+                .container {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                }
+
+                .container > div {
+                    padding: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+                quo eius quaerat quae doloremque quidem quis rem culpa quasi
+                inventore quisquam sed, dicta animi. Vitae inventore sapiente
+                aut eaque earum impedit a, autem iusto magnam alias aperiam
+                placeat facilis rem commodi nesciunt ad ipsam exercitationem
+                provident non consequuntur! Repellendus perspiciatis rerum a
+                optio quos necessitatibus cumque animi illo, tempora voluptatem
+                vel perferendis autem minima eaque neque atque pariatur mollitia
+                quaerat sint quia hic amet dolores! Aspernatur modi dolorum
+                atque saepe cum ipsa doloribus! Dolorem, debitis rem voluptatem
+                aut eius nemo explicabo dolorum officia placeat sapiente totam
+                facilis? Ut, doloremque quisquam!
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+                quo eius quaerat quae doloremque quidem quis rem culpa quasi
+                inventore quisquam sed, dicta animi. Vitae inventore sapiente
+                aut eaque earum impedit a, autem iusto magnam alias aperiam
+                placeat facilis rem commodi nesciunt ad ipsam exercitationem
+                provident non consequuntur! Repellendus perspiciatis rerum a
+                optio quos necessitatibus cumque animi illo, tempora voluptatem
+                vel perferendis autem minima eaque neque atque pariatur mollitia
+                quaerat sint quia hic amet dolores! Aspernatur modi dolorum
+                atque saepe cum ipsa doloribus! Dolorem, debitis rem voluptatem
+                aut eius nemo explicabo dolorum officia placeat sapiente totam
+                facilis? Ut, doloremque quisquam!
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+                quo eius quaerat quae doloremque quidem quis rem culpa quasi
+                inventore quisquam sed, dicta animi. Vitae inventore sapiente
+                aut eaque earum impedit a, autem iusto magnam alias aperiam
+                placeat facilis rem commodi nesciunt ad ipsam exercitationem
+                provident non consequuntur! Repellendus perspiciatis rerum a
+                optio quos necessitatibus cumque animi illo, tempora voluptatem
+                vel perferendis autem minima eaque neque atque pariatur mollitia
+                quaerat sint quia hic amet dolores! Aspernatur modi dolorum
+                atque saepe cum ipsa doloribus! Dolorem, debitis rem voluptatem
+                aut eius nemo explicabo dolorum officia placeat sapiente totam
+                facilis? Ut, doloremque quisquam!
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+                quo eius quaerat quae doloremque quidem quis rem culpa quasi
+                inventore quisquam sed, dicta animi. Vitae inventore sapiente
+                aut eaque earum impedit a, autem iusto magnam alias aperiam
+                placeat facilis rem commodi nesciunt ad ipsam exercitationem
+                provident non consequuntur! Repellendus perspiciatis rerum a
+                optio quos necessitatibus cumque animi illo, tempora voluptatem
+                vel perferendis autem minima eaque neque atque pariatur mollitia
+                quaerat sint quia hic amet dolores! Aspernatur modi dolorum
+                atque saepe cum ipsa doloribus! Dolorem, debitis rem voluptatem
+                aut eius nemo explicabo dolorum officia placeat sapiente totam
+                facilis? Ut, doloremque quisquam!
+            </div>
+        </div>
+    </body>
+</html>
