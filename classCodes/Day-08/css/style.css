@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    margin: 300px auto;
+    border-radius: 6px;
+    border: 1px solid crimson;
+    box-shadow: 0 0 6px #000;
+    background: linear-gradient(to top right, pink, white, pink);
+    position: relative;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: crimson;
+    transition: all linear 0.4s;
+}
+
+.container::before {
+    left: -150px;
+    top: -150px;
+}
+
+.container::after {
+    right: -150px;
+    bottom: -150px;
+}
+
+.container:hover::before {
+    left: 300px;
+    top: 300px;
+    transform: rotateX(180deg);
+    background-color: skyblue;
+}
+
+.container:hover::after {
+    right: 300px;
+    bottom: 300px;
+    transform: rotateX(180deg);
+    background-color: hotpink;
+}
