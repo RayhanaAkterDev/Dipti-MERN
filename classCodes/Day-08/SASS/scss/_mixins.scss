@@ -1,0 +1,6 @@
+@mixin contentCenterLeft($center, $left) {
+    display: flex;
+    align-items: center;
+    align-content: $center;
+    justify-content: $left;
+}

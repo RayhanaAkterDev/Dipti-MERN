@@ -1,0 +1,83 @@
+// @import url('./mixins.scss'); -> older version
+// @use './mixins' as *;
+@use './mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Sass variables
+$textPrimary: #313131;
+$textSecondary: #919191;
+
+// Sass Mixin (reusable classes/css)
+@mixin contentCenter() {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    text-align: center;
+
+    h1 {
+        color: $textPrimary;
+        font-size: 3rem;
+        padding: 30px;
+    }
+
+    .container {
+        margin: 0 auto;
+        height: 50vh;
+        background-color: skyblue;
+        @include mixins.contentCenterLeft(center, start);
+        // @include contentCenterLeft(center, start);
+        // @include contentCenter;
+
+        h2 {
+            background-color: transparent;
+            transition: all linear 0.3s;
+            display: inline-block;
+            color: $textSecondary;
+            position: relative;
+            border-radius: 8px;
+            font-size: 2rem;
+            padding: 1rem;
+            &:hover {
+                background-color: $textPrimary;
+            }
+            &::after {
+                content: ' Icons';
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4px;
+                background-color: $textSecondary;
+            }
+
+            .icon {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.alal {
+    width: 180px;
+    height: 180px;
+    background-color: cornflowerblue;
+}
+
+.dulal{
+    @extend .alal;
+    background-color: $textPrimary;
+}
