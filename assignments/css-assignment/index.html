@@ -1,0 +1,484 @@
+<!--
+    Topic: Assignment 02 - Influencer Gear Product Page
+    Purpose: To create a product page using HTML and SCSS.
+    Features: This assignment will help you understand the css properties using SASS.
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Created date: 2026-07-19
+    Last Updated: 2026-07-19
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Information -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="This is an influencer gear product page using html and scss created as part of the CSS assignment.  "
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+
+        <!-- Page Title -->
+        <title>Assignment 02 - Influencer Gear</title>
+
+        <!-- Font Awesome Lin -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+            integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./scss/style.min.css" />
+    </head>
+
+    <body>
+        <!-- Content starts from here -->
+        <header>
+            <div class="container">
+                <!-- Hidden Mobile Menu Bar -->
+                <div class="mobileHamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="./index.html">Influencer products</a>
+                </div>
+
+                <div class="menuContainer">
+                    <!-- Menu -->
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icons -->
+                    <div class="menuIcons">
+                        <a href="#" class="icon searchIcon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#" class="icon cartIcon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1>Start your Journey as <span>Influencer</span></h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sem vestibulum sed scelerisque eros. Lectus
+                            faucibus.
+                        </p>
+                        <a href="#"
+                            >Prebook now <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="camera-image-bg">
+                            <img
+                                src="./images/hero-bg.png"
+                                alt="Hero Background"
+                            />
+
+                            <div class="camera-image">
+                                <img
+                                    src="./images/camera.png"
+                                    alt="Camera Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partners -->
+            <section class="partners">
+                <div class="container">
+                    <img src="./images/partners/Alibaba.png" alt="" />
+                    <img src="./images/partners/Amazon.png" alt="" />
+                    <img src="./images/partners/Daraz.png" alt="" />
+                    <img src="./images/partners/Ebay.png" alt="" />
+                    <img src="./images/partners/Rakuten.png" alt="" />
+                    <img src="./images/partners/Walmart.png" alt="" />
+                    <img src="./images/partners/Target.png" alt="" />
+                </div>
+            </section>
+
+            <!-- Products -->
+            <section class="products">
+                <div class="container">
+                    <h2>Popular Collection</h2>
+
+                    <!-- product container -->
+                    <div class="productsContainer">
+                        <!-- Product 1 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products1.jpg"
+                                    alt="product1"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Flex Tripod</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products2.jpg"
+                                    alt="product2"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>microphone</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products3.jpg"
+                                    alt="product3"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Airbuds</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products4.jpg"
+                                    alt="product4"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Drone</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products5.jpg"
+                                    alt="product5"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Light Setup</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products6.jpg"
+                                    alt="product6"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Photoshoot set</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products7.jpg"
+                                    alt="product7"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Blogging Camera</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products8.jpg"
+                                    alt="product8"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Green Screen</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="product">
+                            <div class="productImage">
+                                <img
+                                    src="./images/products/products9.jpg"
+                                    alt="product9"
+                                />
+                            </div>
+
+                            <div class="productInfo">
+                                <h3>Action Camera</h3>
+                                <h4>$50.48</h4>
+
+                                <div class="ratings">
+                                    <div class="ratingIcons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i
+                                        ><i
+                                            class="fa-solid fa-star-half-stroke"
+                                        ></i>
+                                    </div>
+                                    <span>4.99</span>
+                                </div>
+
+                                <p>
+                                    Word wide shifting <br />
+                                    available <br />Buyers protection possible!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productBtn">
+                        <a href="#">
+                            See More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feature -->
+            <section class="feature">
+                <div class="container">
+                    <div class="featureImage">
+                        <img src="./images/feature.jpg" alt="Feature Image" />
+                    </div>
+
+                    <div class="featureText">
+                        <h2>Featured products at one place</h2>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet.
+                        </p>
+
+                        <a href="#"
+                            >Join Now <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footerText">
+                    <h3>Influencer products</h3>
+                    <p>
+                        Copyright &copy; 2026 influencer products
+                        <span>All rights reserved</span>
+                    </p>
+                </div>
+
+                <div class="socialIcons">
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <i class="fa-brands fa-dribbble icon"></i>
+                    <i class="fa-brands fa-twitter icon"></i>
+                    <i class="fa-brands fa-youtube icon"></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
