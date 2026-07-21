@@ -1,0 +1,16 @@
+/*
+    Topic: Introduction to CSS
+    Purpose: Demonstrates External CSS.
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-21
+*/
+
+.external-css-demo {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #fff0f3;
+}
+
+.external-css-demo h3 {
+    color: crimson;
+}

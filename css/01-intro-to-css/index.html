@@ -1,0 +1,106 @@
+<!--
+    Topic: Introduction to CSS
+    Purpose: Demonstrates the three ways of applying CSS to HTML documents.
+    Features:
+        - Inline CSS
+        - Internal CSS
+        - External CSS
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-21
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates the three ways of applying CSS: inline, internal, and external CSS."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Introduction to CSS</title>
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Internal CSS -->
+        <style>
+            .internal-css-demo {
+                border: 1px solid black;
+                padding: 10px;
+                background-color: #f0fff4;
+            }
+
+            .internal-css-demo h3 {
+                color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <h1>Introduction to CSS</h1>
+            <p>
+                CSS (Cascading Style Sheets) is used to control the appearance
+                and layout of HTML elements. CSS can be applied in three
+                different ways: inline CSS, internal CSS, and external CSS.
+            </p>
+
+            <hr />
+
+            <!-- Inline CSS -->
+            <h2>Inline CSS</h2>
+
+            <section
+                style="
+                    border: 1px solid black;
+                    padding: 10px;
+                    background-color: #f0f8ff;
+                "
+            >
+                <h3 style="color: purple">This Heading Uses Inline CSS</h3>
+
+                <p>
+                    Styles are applied directly through the
+                    <code>style</code> attribute.
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- Internal CSS -->
+            <h2>Internal CSS</h2>
+
+            <section class="internal-css-demo">
+                <h3>This Heading Uses Internal CSS</h3>
+
+                <p>
+                    Styles are written inside a
+                    <code>&lt;style&gt;</code> element within the
+                    <code>&lt;head&gt;</code>.
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- External CSS -->
+            <h2>External CSS</h2>
+
+            <section class="external-css-demo">
+                <h3>This Heading Uses External CSS</h3>
+
+                <p>
+                    Styles are written in a separate
+                    <code>.css</code> file and linked to the HTML document.
+                </p>
+            </section>
+
+            <!-- Upcoming Topics:
+                - CSS Selectors
+            -->
+        </main>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+/*
+    Topic: CSS Selectors (Advanced)
+    Purpose: Demonstrates advanced CSS selectors.
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-21
+*/
+
+/* Descendant Selector */
+.parent p {
+    color: darkgreen;
+}
+
+/* Child Selector */
+.child-parent > p {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Selector */
+h3 + p {
+    color: brown;
+}
+
+/* General Sibling Selector */
+h4 ~ p {
+    color: purple;
+}
+
+/* Attribute Selector */
+input[type='text'] {
+    border: 2px solid teal;
+}

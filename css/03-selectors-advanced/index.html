@@ -1,0 +1,146 @@
+<!--
+    Topic: CSS Selectors (Advanced)
+    Purpose: Demonstrates advanced CSS selectors used to target elements based on relationships and attributes.
+    Features:
+        - Descendant Selector
+        - Child Selector
+        - Adjacent Sibling Selector
+        - General Sibling Selector
+        - Attribute Selector
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-21
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Demonstrates advanced CSS selectors including combinators and attribute selectors."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Selectors (Advanced)</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS Selectors (Advanced)</h1>
+
+            <p>
+                Advanced selectors allow developers to target elements based on
+                their relationships with other elements or specific HTML
+                attributes.
+            </p>
+
+            <hr />
+
+            <!-- Descendant Selector -->
+            <h2>Descendant Selector</h2>
+
+            <p>
+                A descendant selector targets elements that are nested inside
+                another element, regardless of depth.
+            </p>
+
+            <div class="parent">
+                <p>
+                    This paragraph is selected using a
+                    <code>descendant selector</code>.
+                </p>
+
+                <div>
+                    <p>
+                        This nested paragraph is also selected by the same
+                        selector.
+                    </p>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- Child Selector -->
+            <h2>Child Selector</h2>
+
+            <p>
+                A child selector targets only direct children of a parent
+                element.
+            </p>
+
+            <div class="child-parent">
+                <p>This paragraph is a direct child and is selected.</p>
+
+                <section>
+                    <p>
+                        This paragraph is not a direct child and is not
+                        selected.
+                    </p>
+                </section>
+            </div>
+
+            <hr />
+
+            <!-- Adjacent Sibling Selector -->
+            <h2>Adjacent Sibling Selector</h2>
+
+            <p>
+                An adjacent sibling selector targets the first element that
+                immediately follows another element.
+            </p>
+
+            <h3>Heading</h3>
+
+            <p>
+                This paragraph is selected because it comes immediately after
+                the heading.
+            </p>
+
+            <p>
+                This paragraph is not selected by the adjacent sibling selector.
+            </p>
+
+            <hr />
+
+            <!-- General Sibling Selector -->
+            <h2>General Sibling Selector</h2>
+
+            <p>
+                A general sibling selector targets all matching siblings that
+                appear after a specified element.
+            </p>
+
+            <h4>Section Title</h4>
+
+            <p>This paragraph is selected.</p>
+
+            <div>This div is not selected.</div>
+
+            <p>This paragraph is also selected.</p>
+
+            <hr />
+
+            <!-- Attribute Selector -->
+            <h2>Attribute Selector</h2>
+
+            <p>
+                Attribute selectors target elements based on the presence or
+                value of an HTML attribute.
+            </p>
+
+            <input type="text" placeholder="Text input selected by attribute" />
+
+            <input type="email" placeholder="Email input not selected" />
+
+            <!-- Upcoming Topics:
+                - CSS Pseudo Classes
+                - CSS Pseudo Elements
+                - CSS Specificity & Inheritance
+            -->
+        </main>
+    </body>
+</html>

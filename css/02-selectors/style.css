@@ -1,0 +1,29 @@
+/*
+    Topic: CSS Selectors
+    Purpose: Demonstrates common CSS selectors.
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-21
+*/
+
+/* Element Selector */
+p {
+    color: #333333;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: #d6eaf8;
+    padding: 10px;
+}
+
+/* ID Selector */
+#unique-text {
+    color: #922b21;
+    font-weight: bold;
+}
+
+/* Group Selector */
+h3,
+span {
+    color: #2874a6;
+}
