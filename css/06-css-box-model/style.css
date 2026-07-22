@@ -1,0 +1,123 @@
+/*
+    Topic: CSS Box Model
+    Purpose: Demonstrates content, padding,
+             border, and margin.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+/* =====================================
+   Shared Styles
+===================================== */
+
+body {
+    font-family: sans-serif;
+}
+
+.box {
+    width: 220px;
+    padding: 12px;
+    background-color: #bfdbfe;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =====================================
+   Content Area
+===================================== */
+
+/*
+    Content Area:
+
+    The actual space used by text,
+    images, or other content.
+*/
+
+.content-demo {
+    width: 220px;
+    height: 100px;
+    background-color: #bfdbfe;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+/* =====================================
+   Padding
+===================================== */
+
+/*
+    Padding creates space
+    between content and border.
+
+    Shorthand:
+
+    padding: 20px;
+
+    padding: 20px 40px;
+
+    padding: 20px 40px 10px 5px;
+*/
+
+.padding-demo {
+    width: 220px;
+    padding: 40px;
+    background-color: #bfdbfe;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =====================================
+   Border
+===================================== */
+
+/*
+    Border surrounds
+    the content and padding.
+*/
+
+.border-demo {
+    width: 220px;
+    padding: 20px;
+    border: 8px solid steelblue;
+    background-color: #bfdbfe;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =====================================
+   Margin
+===================================== */
+
+/*
+    Margin creates space
+    outside the element.
+*/
+
+.margin-demo {
+    margin-bottom: 40px;
+}
+
+/* =====================================
+   Complete Box Model
+===================================== */
+
+/*
+    Box Model Structure
+
+    Margin
+        Border
+            Padding
+                Content
+*/
+
+.complete-box-model {
+    width: 220px;
+    padding: 40px;
+    border: 10px solid steelblue;
+    margin: 40px;
+    background-color: #bfdbfe;
+    text-align: center;
+    font-weight: bold;
+}

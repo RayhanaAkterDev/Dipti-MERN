@@ -1,0 +1,81 @@
+<!--
+    Topic: CSS Box Sizing
+    Purpose: Demonstrates how box-sizing affects element dimensions.
+
+    Features:
+        - content-box
+        - border-box
+        - Width Calculation Comparison
+        - Global border-box Reset
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Box Sizing</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS Box Sizing</h1>
+
+            <p>
+                The box-sizing property determines how width and height are
+                calculated for an element.
+            </p>
+
+            <hr />
+
+            <h2>content-box (Default)</h2>
+
+            <div class="sizing-box content-box">content-box</div>
+
+            <p>Width = 200px + padding + border</p>
+
+            <hr />
+
+            <h2>border-box</h2>
+
+            <div class="sizing-box border-box">border-box</div>
+
+            <p>Width remains 200px</p>
+
+            <hr />
+
+            <h2>Side By Side Comparison</h2>
+
+            <div class="comparison-wrapper">
+                <div class="sizing-box content-box">content-box</div>
+
+                <div class="sizing-box border-box">border-box</div>
+            </div>
+
+            <p>Both boxes have width: 200px, padding: 20px, and border: 5px.</p>
+
+            <p>
+                The content-box element becomes larger, while border-box keeps
+                its specified width.
+            </p>
+
+            <hr />
+
+            <h2>Global Reset</h2>
+
+            <pre><code>* {
+    box-sizing: border-box;
+}</code></pre>
+
+            <p>
+                This is commonly used in modern projects to make sizing more
+                predictable.
+            </p>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+/*
+    Topic: CSS Units & Measurements
+    Purpose: Demonstrates commonly used CSS units.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+/*
+    Other CSS Units:
+
+    cm
+    mm
+    in
+    pt
+    pc
+
+    Mostly used for print styles.
+*/
+
+/* =====================================
+   Shared Styles
+===================================== */
+
+.box,
+.comparison-box {
+    padding: 1rem;
+    margin-block: 1rem;
+
+    background-color: #dbeafe;
+
+    border: 2px solid steelblue;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+/* =====================================
+   px
+===================================== */
+
+/*
+    Fixed size.
+
+    Does not depend on
+    parent or viewport size.
+*/
+
+.px-demo {
+    width: 200px;
+}
+
+/* =====================================
+   Percentage
+===================================== */
+
+/*
+    Relative to parent element.
+*/
+
+.parent-box {
+    width: 400px;
+    border: 2px dashed #999;
+}
+
+.percent-demo {
+    width: 50%;
+}
+
+/* =====================================
+   em
+===================================== */
+
+/*
+    Relative to parent's font size.
+
+    2 × 20px = 40px
+*/
+
+.em-parent {
+    font-size: 20px;
+}
+
+.em-demo {
+    font-size: 2em;
+}
+
+/* =====================================
+   rem
+===================================== */
+
+/*
+    Relative to root (html) font size.
+
+    2 × 16px = 32px
+*/
+
+.rem-demo {
+    font-size: 2rem;
+}
+
+/* =====================================
+   vw
+===================================== */
+
+/*
+    Relative to viewport width.
+
+    50vw = 50% of viewport width.
+*/
+
+.vw-demo {
+    width: 50vw;
+}
+
+/* =====================================
+   vh
+===================================== */
+
+/*
+    Relative to viewport height.
+
+    30vh = 30% of viewport height.
+*/
+
+.vh-demo {
+    height: 30vh;
+    padding: 1rem;
+    background-color: #dbeafe;
+    border: 2px solid steelblue;
+    font-weight: bold;
+}
+
+/* =====================================
+   Unit Comparison
+===================================== */
+
+.px-box {
+    width: 200px;
+}
+
+.percent-box {
+    width: 50%;
+}
+
+.vw-box {
+    width: 50vw;
+}

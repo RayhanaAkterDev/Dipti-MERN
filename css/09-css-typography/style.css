@@ -1,0 +1,138 @@
+/*
+    Topic: CSS Typography
+    Purpose: Demonstrates commonly used typography properties.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+/* =====================================
+   Font Family
+===================================== */
+
+.serif-font {
+    font-family: Georgia, serif;
+}
+
+.sans-serif-font {
+    font-family: Arial, sans-serif;
+}
+
+.monospace-font {
+    font-family: "Courier New", monospace;
+}
+
+/* =====================================
+   Font Size
+===================================== */
+
+.small-text {
+    font-size: 0.875rem;
+}
+
+.large-text {
+    font-size: 2rem;
+}
+
+/* =====================================
+   Font Weight
+===================================== */
+
+.normal-weight {
+    font-weight: 400;
+}
+
+.bold-weight {
+    font-weight: 700;
+}
+
+/* =====================================
+   Font Style
+===================================== */
+
+.italic-style {
+    font-style: italic;
+}
+
+/* =====================================
+   Line Height
+===================================== */
+
+/*
+    Controls vertical spacing
+    between lines of text.
+*/
+
+.line-height-demo {
+    line-height: 2;
+}
+
+/* =====================================
+   Letter Spacing
+===================================== */
+
+.letter-spacing-demo {
+    letter-spacing: 4px;
+}
+
+/* =====================================
+   Word Spacing
+===================================== */
+
+.word-spacing-demo {
+    word-spacing: 20px;
+}
+
+/* =====================================
+   Text Align
+===================================== */
+
+.center-align {
+    text-align: center;
+}
+
+/* =====================================
+   Text Decoration
+===================================== */
+
+.underline-text {
+    text-decoration: underline;
+}
+
+/* =====================================
+   Text Transform
+===================================== */
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+/* =====================================
+   Font Shorthand
+===================================== */
+
+/*
+    Order:
+
+    font-style
+    font-weight
+    font-size/line-height
+    font-family
+*/
+
+.font-shorthand-demo {
+    font:
+        italic 700 2rem/1.5 Arial,
+        sans-serif;
+}
+
+/*
+    Other Typography Properties:
+
+    font-variant
+    font-stretch
+    font-kerning
+
+    These are advanced typography properties
+    and depend on font support.
+*/

@@ -1,0 +1,31 @@
+/*
+    Topic: CSS Colors
+    Purpose: Demonstrates different color formats in CSS.
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-21
+*/
+
+/* Named Color */
+.named-color {
+    color: red;
+}
+
+/* Hex Color */
+.hex-color {
+    color: #4caf50;
+}
+
+/* RGB Color */
+.rgb-color {
+    color: rgb(0, 128, 255);
+}
+
+/* RGBA Color */
+.rgba-color {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+/* HSL Color */
+.hsl-color {
+    color: hsl(300, 70%, 60%);
+}
