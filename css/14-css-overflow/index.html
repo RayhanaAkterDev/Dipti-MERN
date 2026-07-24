@@ -1,0 +1,143 @@
+<!--
+    Topic: CSS Overflow
+    Purpose: Demonstrates how overflowing content is handled.
+
+    Features:
+        - overflow: visible
+        - overflow: hidden
+        - overflow: scroll
+        - overflow: auto
+        - overflow-x
+        - overflow-y
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-22
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how CSS overflow controls content that exceeds its container."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Overflow</title>
+
+        <!-- Shared Styles -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <link rel="stylesheet" href="../../styles/base.css" />
+
+        <!-- Topic Styles -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS Overflow</h1>
+
+            <p>
+                The <code>overflow</code> property controls what happens when
+                content becomes larger than its container.
+            </p>
+
+            <hr />
+
+            <!-- Overflow Visible -->
+
+            <section>
+                <h2>Overflow: Visible</h2>
+
+                <p>
+                    Default behavior. Content can spill outside the container.
+                </p>
+
+                <div class="box overflow-visible">
+                    This content is longer than the container height and will
+                    overflow outside the box.
+
+                    <br />
+                    <hr />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- Overflow Hidden -->
+
+            <section>
+                <h2>Overflow: Hidden</h2>
+
+                <p>Overflowing content is clipped and cannot be accessed.</p>
+
+                <div class="box overflow-hidden">
+                    This content is longer than the container height and will be
+                    hidden when it exceeds the box boundaries.
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- Overflow Scroll -->
+
+            <section>
+                <h2>Overflow: Scroll</h2>
+
+                <p>Scrollbars are always displayed.</p>
+
+                <div class="box overflow-scroll">
+                    This content is longer than the container height and can be
+                    viewed using the scrollbars.
+
+                    <br />
+                    <hr />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- Overflow Auto -->
+
+            <section>
+                <h2>Overflow: Auto</h2>
+
+                <p>Scrollbars appear only when necessary.</p>
+
+                <div class="box overflow-auto">
+                    This content is longer than the container height and
+                    scrollbars will appear only if overflow occurs.
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- Overflow X and Y -->
+
+            <section>
+                <h2>Overflow X and Overflow Y</h2>
+
+                <p>
+                    Horizontal and vertical overflow can be controlled
+                    separately.
+                </p>
+
+                <div class="overflow-axis">
+                    <div class="wide-content">
+                        Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 Item 7 Item 8
+                        Item 9 Item 10 Item 11 Item 12 Item 13 Item 14 Item 15
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Topics:
+                - CSS Float & Clear
+            -->
+        </main>
+    </body>
+</html>

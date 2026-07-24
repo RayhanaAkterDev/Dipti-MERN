@@ -1,0 +1,116 @@
+<!--
+    Topic: CSS Positioning
+    Purpose: Demonstrates how elements can be positioned using different position values.
+
+    Features:
+        - position: static
+        - position: relative
+        - position: absolute
+        - position: fixed
+        - position: sticky
+        - top, right, bottom, left
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-22
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how CSS positioning works using static, relative, absolute, fixed, and sticky."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Positioning</title>
+
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS Positioning</h1>
+
+            <p>
+                The <code>position</code> property controls how elements are
+                placed in the document.
+            </p>
+
+            <hr />
+
+            <section>
+                <h2>Static Position</h2>
+
+                <p>Static is the default positioning behavior.</p>
+
+                <div class="demo-box static-box">Static Element</div>
+            </section>
+
+            <hr />
+
+            <section>
+                <h2>Relative Position</h2>
+
+                <p>
+                    Relative positioning moves an element from its original
+                    position.
+                </p>
+
+                <div class="demo-box relative-box">Relative Element</div>
+            </section>
+
+            <hr />
+
+            <section>
+                <h2>Absolute Position</h2>
+
+                <p>
+                    Absolute positioning uses the nearest positioned ancestor.
+                </p>
+
+                <div class="absolute-container">
+                    <div class="demo-box absolute-box">Absolute Element</div>
+                </div>
+            </section>
+
+            <hr />
+
+            <section>
+                <h2>Fixed Position</h2>
+
+                <p>Fixed elements stay attached to the viewport.</p>
+
+                <div class="demo-box fixed-box">Fixed</div>
+            </section>
+
+            <hr />
+
+            <section>
+                <h2>Sticky Position</h2>
+
+                <p>Scroll inside the container to see sticky behavior.</p>
+
+                <div class="sticky-container">
+                    <div class="demo-box sticky-box">Sticky Element</div>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </section>
+
+            <!-- Upcoming Topics:
+            - CSS Z-Index
+        --></main>
+    </body>
+</html>

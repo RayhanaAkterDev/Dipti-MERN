@@ -1,0 +1,162 @@
+/*
+    Topic: CSS List Styles
+    Purpose: Demonstrates list styling properties.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+/* =====================================
+   Shared Styles
+===================================== */
+
+ul,
+ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+/* =====================================
+   Unordered List Types
+===================================== */
+
+/*
+    Common values:
+
+    disc
+    circle
+    square
+
+    none
+*/
+
+.disc-list {
+    list-style-type: disc;
+}
+
+.circle-list {
+    list-style-type: circle;
+}
+
+.square-list {
+    list-style-type: square;
+}
+
+/* =====================================
+   Ordered List Types
+===================================== */
+
+/*
+    Common values:
+
+    decimal
+    decimal-leading-zero
+
+    lower-alpha
+    upper-alpha
+
+    lower-roman
+    upper-roman
+
+    lower-greek
+
+    lower-latin
+    upper-latin
+*/
+
+.decimal-list {
+    list-style-type: decimal;
+}
+
+.leading-zero-list {
+    list-style-type: decimal-leading-zero;
+}
+
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+.alpha-list {
+    list-style-type: lower-alpha;
+}
+
+/* =====================================
+   List Position
+===================================== */
+
+.outside-list,
+.inside-list {
+    width: 300px;
+    border: 1px solid #cccccc;
+    background-color: #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+.outside-list {
+    list-style-position: outside;
+}
+
+.inside-list {
+    list-style-position: inside;
+}
+
+/* =====================================
+   Remove Markers
+===================================== */
+
+.none-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* =====================================
+   Custom Marker
+===================================== */
+
+.custom-marker-list li::marker {
+    content: '✓ ';
+    color: seagreen;
+}
+
+/* =====================================
+   List Shorthand
+===================================== */
+
+/*
+    Shorthand Syntax:
+
+    list-style:
+    type position image;
+
+    Examples:
+
+    list-style: square inside;
+
+    list-style: circle outside;
+
+    list-style: none;
+
+    Other Property:
+
+    list-style-image
+
+    Rarely used in modern projects.
+    Custom markers with ::marker
+    are usually preferred.
+*/
+
+.shorthand-list {
+    list-style: square inside;
+}
+
+/* ===================================== */
+
+/*
+    Other Property:
+
+    list-style-image
+
+    Rarely used in modern projects.
+    Custom markers with ::marker
+    are usually preferred.
+*/

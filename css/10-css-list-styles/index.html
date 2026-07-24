@@ -1,0 +1,153 @@
+<!--
+    Topic: CSS List Styles
+    Purpose: Demonstrates how to customize ordered and unordered lists.
+
+    Features:
+        - list-style-type
+        - list-style-position
+        - list-style: none
+        - Custom Markers (::marker)
+        - list-style Shorthand
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-22
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+            name="description"
+            content="Demonstrates CSS list styling using list-style-type, list-style-position, shorthand, and custom markers."
+        />
+
+        <meta name="author" content="Rayhana Akter Sumaya" />
+
+        <title>CSS List Styles</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS List Styles</h1>
+
+            <p>
+                CSS provides several properties for controlling the appearance
+                of ordered and unordered lists.
+            </p>
+
+            <hr />
+
+            <!-- Unordered List Types -->
+
+            <h2>Unordered List Types</h2>
+
+            <ul class="disc-list">
+                <li>Disc Marker</li>
+            </ul>
+
+            <ul class="circle-list">
+                <li>Circle Marker</li>
+            </ul>
+
+            <ul class="square-list">
+                <li>Square Marker</li>
+            </ul>
+
+            <hr />
+
+            <!-- Ordered List Types -->
+
+            <h2>Ordered List Types</h2>
+
+            <ol class="decimal-list">
+                <li>Decimal Marker</li>
+            </ol>
+
+            <ol class="leading-zero-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <ol class="roman-list">
+                <li>Upper Roman Marker</li>
+            </ol>
+
+            <ol class="alpha-list">
+                <li>Lower Alpha Marker</li>
+            </ol>
+
+            <hr />
+
+            <!-- List Position -->
+
+            <h2>List Position</h2>
+
+            <h3>outside (Default)</h3>
+
+            <ul class="outside-list">
+                <li>
+                    This is a long list item that wraps onto multiple lines to
+                    demonstrate the default outside marker position.
+                </li>
+            </ul>
+
+            <h3>inside</h3>
+
+            <ul class="inside-list">
+                <li>
+                    This is a long list item that wraps onto multiple lines to
+                    demonstrate the inside marker position.
+                </li>
+            </ul>
+
+            <hr />
+
+            <!-- Remove Markers -->
+
+            <h2>Remove Markers</h2>
+
+            <ul class="none-list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+
+            <hr />
+
+            <!-- Custom Marker -->
+
+            <h2>Custom Marker (::marker)</h2>
+
+            <ul class="custom-marker-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <hr />
+
+            <!-- List Shorthand -->
+
+            <h2>List Shorthand</h2>
+
+            <ul class="shorthand-list">
+                <li>Square Marker</li>
+                <li>Inside Position</li>
+            </ul>
+
+            <!-- Upcoming Topics:
+                - CSS Cursor & Visibility
+            -->
+        </main>
+    </body>
+</html>

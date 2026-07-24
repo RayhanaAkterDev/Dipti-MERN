@@ -1,0 +1,145 @@
+<!--
+    Topic: CSS Display
+    Purpose: Demonstrates how different display values affect layout.
+
+    Features:
+        - display: block
+        - display: inline
+        - display: inline-block
+        - display: none
+        - display: none vs visibility: hidden
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-22
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how CSS display values affect element layout and behavior."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Display</title>
+
+        <!-- Shared Styles -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <link rel="stylesheet" href="../../styles/base.css" />
+
+        <!-- Topic Styles -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS Display</h1>
+
+            <p>
+                The <code>display</code> property controls how an element
+                behaves in the document layout.
+            </p>
+
+            <hr />
+
+            <!-- Block -->
+
+            <section>
+                <h2>Block Elements</h2>
+
+                <p>
+                    Block elements start on a new line and take up the full
+                    available width by default.
+                </p>
+
+                <div class="box block-box">Block Element 1</div>
+
+                <div class="box block-box">Block Element 2</div>
+            </section>
+
+            <hr />
+
+            <!-- Inline -->
+
+            <section>
+                <h2>Inline Elements</h2>
+
+                <p>
+                    Inline elements stay on the same line and only take up as
+                    much width as their content needs.
+                </p>
+
+                <span class="inline-box"> Inline 1 </span>
+
+                <span class="inline-box"> Inline 2 </span>
+
+                <span class="inline-box"> Inline 3 </span>
+            </section>
+
+            <hr />
+
+            <!-- Inline Block -->
+
+            <section>
+                <h2>Inline-Block Elements</h2>
+
+                <p>
+                    Inline-block elements stay on the same line like inline
+                    elements, but width and height can be applied.
+                </p>
+
+                <div class="inline-block-box">Item 1</div>
+
+                <div class="inline-block-box">Item 2</div>
+
+                <div class="inline-block-box">Item 3</div>
+            </section>
+
+            <hr />
+
+            <!-- Display None -->
+
+            <section>
+                <h2>Display None</h2>
+
+                <p>
+                    Elements with <code>display: none</code> are removed from
+                    the layout.
+                </p>
+
+                <div class="box">First Element</div>
+
+                <div class="box none-box">Hidden Element</div>
+
+                <div class="box">Second Element</div>
+            </section>
+
+            <hr />
+
+            <!-- Display None vs Visibility Hidden -->
+
+            <section>
+                <h2>Display None vs Visibility Hidden</h2>
+
+                <h3>visibility: hidden</h3>
+
+                <div class="box">First Element</div>
+
+                <div class="box hidden-box">Hidden Element</div>
+
+                <div class="box">Second Element</div>
+
+                <p>Notice that the hidden element still occupies space.</p>
+            </section>
+
+            <!-- Upcoming Topics:
+                - CSS Positioning
+                - CSS Cursor & Visibility
+            -->
+        </main>
+    </body>
+</html>

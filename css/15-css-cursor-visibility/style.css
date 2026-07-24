@@ -1,0 +1,115 @@
+/*
+    Topic: CSS Cursor & Visibility
+    Purpose: Demonstrates cursor styles and visibility.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+/* =====================================
+   Shared Box Styles
+===================================== */
+
+.demo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 80px;
+
+    border: 2px solid #999999;
+    background-color: #f5f5f5;
+
+    font-weight: bold;
+}
+
+.cursor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* =====================================
+   Cursor
+===================================== */
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-text {
+    cursor: text;
+}
+
+.cursor-grab {
+    cursor: grab;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.cursor-wait {
+    cursor: wait;
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+
+/*
+    Other common cursor values:
+
+    help
+    progress
+    crosshair
+    cell
+    copy
+    alias
+    zoom-out
+    ew-resize
+    ns-resize
+    col-resize
+    row-resize
+    all-scroll
+*/
+
+/* =====================================
+   Visibility
+===================================== */
+
+.visibility-demo {
+    display: flex;
+    gap: 1rem;
+}
+
+.hidden-box {
+    visibility: hidden;
+}
+
+/*
+    visibility values:
+
+    visible
+    hidden
+    collapse (mainly for table rows/columns)
+
+    Difference:
+
+    visibility: hidden;
+        ✓ Hidden
+        ✓ Space remains
+
+    display: none;
+        ✓ Hidden
+        ✓ Space removed
+*/

@@ -23,20 +23,20 @@ Examples and notes covering CSS fundamentals, layouts, responsive design, animat
 ## Typography & Basic Styling
 
 * [CSS Typography](./09-css-typography/index.html)
-* [CSS List Styles](./24-css-list-styles/index.html)
-* [CSS Cursor & Visibility](./25-css-cursor-visibility/index.html)
+* [CSS List Styles](./10-css-list-styles/index.html)
 
 ---
 
 ## Layout Techniques
 
-* [CSS Display](./10-css-display/index.html)
-* [CSS Positioning](./11-css-positioning/index.html)
-* [CSS Z-Index](./12-css-z-index/index.html)
-* [CSS Overflow](./13-css-overflow/index.html)
-* [CSS Float & Clear](./14-css-float-clear/index.html)
-* [CSS Flexbox](./15-css-flexbox/index.html)
-* [CSS Grid Layout](./16-css-grid-layout/index.html)
+* [CSS Display](./11-css-display/index.html)
+* [CSS Positioning](./12-css-positioning/index.html)
+* [CSS Z-Index](./13-css-z-index/index.html)
+* [CSS Overflow](./14-css-overflow/index.html)
+* [CSS Cursor & Visibility](./15-css-cursor-visibility/index.html)
+* [CSS Float & Clear](./16-css-float-clear/index.html)
+* [CSS Flexbox](./17-css-flexbox/index.html)
+* [CSS Grid Layout](./18-css-grid-layout/index.html)
 
 ---
 

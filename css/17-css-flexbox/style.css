@@ -1,0 +1,143 @@
+/* ========= FLEX CONTAINER ========= */
+/* display:flex creates a flex formatting context. */
+
+.demo {
+    display: flex;
+    border: 2px solid #444;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    gap: 1rem;
+}
+
+.item {
+    background: #4f8ef7;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    min-width: 70px;
+}
+
+/* flex-direction
+Default: row
+Other: row-reverse | column | column-reverse */
+.column {
+    flex-direction: column;
+}
+
+/* flex-wrap
+Default: nowrap
+Other: wrap | wrap-reverse */
+.wrap {
+    flex-wrap: wrap;
+}
+.wrap .item {
+    width: 120px;
+}
+
+/* justify-content
+Default:flex-start
+Other:flex-end,center,space-between,space-around,space-evenly */
+.between {
+    justify-content: space-between;
+}
+
+/* align-items
+Default:stretch */
+.align {
+    height: 180px;
+    align-items: flex-end;
+}
+.h1 {
+    height: 40px;
+}
+.h2 {
+    height: 80px;
+}
+.h3 {
+    height: 120px;
+}
+
+/* order
+Default:0
+Lower value appears first. */
+.order1 {
+    order: 1;
+}
+.order2 {
+    order: 2;
+}
+.order3 {
+    order: 3;
+}
+
+/* flex-grow
+Default:0
+Extra space is distributed proportionally. */
+.grow1 {
+    flex-grow: 1;
+}
+.grow2 {
+    flex-grow: 2;
+}
+
+/* flex-shrink
+Default:1
+0 = never shrink. */
+.shrink-demo {
+    width: 320px;
+}
+.wide {
+    width: 220px;
+}
+.shrink0 {
+    flex-shrink: 0;
+}
+.shrink2 {
+    flex-shrink: 2;
+}
+
+/* flex-basis
+Default:auto */
+.basis100 {
+    flex-basis: 100px;
+}
+.basis200 {
+    flex-basis: 200px;
+}
+
+/* align-self
+Default:auto
+Overrides align-items for one item. */
+.alignself {
+    height: 180px;
+    align-items: flex-start;
+}
+.self-end {
+    align-self: flex-end;
+}
+
+/* Responsive cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    flex: 1 1 calc(33.333% - 1rem);
+    padding: 2rem;
+    background: #ddd;
+    text-align: center;
+}
+
+/* Media queries are covered later.
+This simply demonstrates a real-world Flexbox layout. */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+@media (max-width: 576px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}

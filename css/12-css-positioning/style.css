@@ -1,0 +1,75 @@
+/*
+    Topic: CSS Positioning
+    Purpose: Demonstrates position values.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+.demo-box {
+    width: 250px;
+    padding: 1rem;
+    border: 2px solid #999999;
+    background-color: #e3f2fd;
+}
+
+.static-box {
+    position: static;
+}
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: #fff3cd;
+}
+
+/*
+    position: relative;
+
+    Creates the containing block
+    for the absolute element.
+*/
+
+.absolute-container {
+    position: relative;
+    height: 200px;
+    border: 2px dashed #999999;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #f8d7da;
+}
+
+.fixed-box {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 120px;
+    background-color: #d1e7dd;
+}
+
+.sticky-container {
+    height: 200px;
+    overflow-y: auto;
+    border: 2px solid #999999;
+    padding: 1rem;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: #d6d1f0;
+}
+
+/*
+    Offset Properties:
+
+    top
+    right
+    bottom
+    left
+*/

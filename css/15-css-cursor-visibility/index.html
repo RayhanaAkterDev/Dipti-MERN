@@ -1,0 +1,113 @@
+<!--
+    Topic: CSS Cursor & Visibility
+    Purpose: Demonstrates commonly used cursor styles and the visibility property.
+
+    Features:
+        - cursor
+        - visibility
+        - visibility: visible
+        - visibility: hidden
+        - Difference between visibility and display
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-22
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Document Metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how cursor styles and the visibility property affect user interaction."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Cursor & Visibility</title>
+
+        <!-- Shared Styles -->
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <link rel="stylesheet" href="../../styles/base.css" />
+
+        <!-- Topic Styles -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS Cursor & Visibility</h1>
+
+            <p>
+                The <code>cursor</code> property changes the mouse cursor, while
+                <code>visibility</code> controls whether an element is visible
+                without removing its layout space.
+            </p>
+
+            <hr />
+
+            <!-- Cursor -->
+
+            <section>
+                <h2>Cursor</h2>
+
+                <div class="cursor-grid">
+                    <div class="demo-box cursor-default">default</div>
+                    <div class="demo-box cursor-pointer">pointer</div>
+                    <div class="demo-box cursor-text">text</div>
+                    <div class="demo-box cursor-grab">grab</div>
+                    <div class="demo-box cursor-move">move</div>
+                    <div class="demo-box cursor-not-allowed">not-allowed</div>
+                    <div class="demo-box cursor-wait">wait</div>
+                    <div class="demo-box cursor-zoom-in">zoom-in</div>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- Visibility -->
+
+            <section>
+                <h2>Visibility</h2>
+
+                <div class="visibility-demo">
+                    <div class="demo-box">Visible</div>
+
+                    <div class="demo-box hidden-box">Hidden</div>
+
+                    <div class="demo-box">Visible</div>
+                </div>
+
+                <p>
+                    The middle element is hidden but still occupies its original
+                    space.
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- Visibility vs Display -->
+
+            <section>
+                <h2>Visibility vs Display</h2>
+
+                <ul>
+                    <li>
+                        <code>visibility: hidden</code> hides the element but
+                        keeps its layout space.
+                    </li>
+
+                    <li>
+                        <code>display: none</code> removes both the element and
+                        its layout space.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Upcoming Topics:
+                - CSS Float & Clear
+            -->
+        </main>
+    </body>
+</html>

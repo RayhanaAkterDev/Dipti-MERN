@@ -1,0 +1,73 @@
+/*
+    Topic: CSS Float & Clear
+    Purpose: Demonstrates float and clear behavior.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+/* =====================================
+   Shared Styles
+===================================== */
+
+.demo {
+    border: 2px solid #999999;
+    padding: 1rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 120px;
+    height: 80px;
+
+    background-color: #dbeafe;
+    border: 2px solid #60a5fa;
+
+    font-weight: bold;
+}
+
+/* =====================================
+   Float
+===================================== */
+
+.float-left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.float-right {
+    float: right;
+    margin-left: 1rem;
+}
+
+/*
+    Common values:
+
+    left
+    right
+    none
+*/
+
+/* =====================================
+   Clear
+===================================== */
+
+.clear-left {
+    clear: left;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/*
+    Common values:
+
+    left
+    right
+    both
+    none
+*/

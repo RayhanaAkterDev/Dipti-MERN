@@ -1,0 +1,66 @@
+<!--
+    Topic: CSS Z-Index
+    Purpose: Demonstrates stacking order using z-index.
+
+    Features:
+        - Overlapping elements
+        - z-index values
+        - Stacking order
+        - Positioned elements
+
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Last Updated: 2026-07-22
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn how z-index controls stacking order in CSS."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Z-Index</title>
+
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main>
+            <h1>CSS Z-Index</h1>
+
+            <p>
+                The <code>z-index</code> property controls which overlapping
+                element appears on top.
+            </p>
+
+            <hr />
+
+            <section>
+                <h2>Stacking Order</h2>
+
+                <div class="z-container">
+                    <div class="z-box box-1">z-index: 1</div>
+
+                    <div class="z-box box-2">z-index: 2</div>
+
+                    <div class="z-box box-3">z-index: 3</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Important Note</h2>
+
+                <p>
+                    In most cases, z-index works on positioned elements
+                    (relative, absolute, fixed, or sticky).
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

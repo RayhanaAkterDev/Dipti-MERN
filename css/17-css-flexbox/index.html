@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Flexbox</title>
+        <link rel="stylesheet" href="../../styles/reset.css" />
+        <link rel="stylesheet" href="../../styles/base.css" />
+        <link rel="stylesheet" href="../../styles/utility.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>CSS Flexbox</h1>
+            <p>Comprehensive Flexbox demonstration.</p>
+        </header>
+
+        <main>
+            <!-- 1. Basic Flex -->
+            <section>
+                <h2>1. display:flex</h2>
+                <div class="demo basic">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                </div>
+            </section>
+
+            <!-- 2. flex-direction -->
+            <section>
+                <h2>2. flex-direction</h2>
+                <div class="demo row">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                </div>
+                <div class="demo column">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                </div>
+            </section>
+
+            <!-- 3. flex-wrap -->
+            <section>
+                <h2>3. flex-wrap</h2>
+                <div class="demo wrap">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="item">6</div>
+                </div>
+            </section>
+
+            <!-- 4. justify-content -->
+            <section>
+                <h2>4. justify-content</h2>
+                <div class="demo between">
+                    <div class="item">A</div>
+                    <div class="item">B</div>
+                    <div class="item">C</div>
+                </div>
+            </section>
+
+            <!-- 5. align-items -->
+            <section>
+                <h2>5. align-items</h2>
+                <div class="demo align">
+                    <div class="item h1">Short</div>
+                    <div class="item h2">Medium</div>
+                    <div class="item h3">Tall</div>
+                </div>
+            </section>
+
+            <!-- 6. order -->
+            <section>
+                <h2>6. order</h2>
+                <div class="demo">
+                    <div class="item order2">1</div>
+                    <div class="item order3">2</div>
+                    <div class="item order1">3</div>
+                </div>
+            </section>
+
+            <!-- 7. flex-grow -->
+            <section>
+                <h2>7. flex-grow</h2>
+                <div class="demo">
+                    <div class="item grow1">1</div>
+                    <div class="item grow2">2</div>
+                    <div class="item grow1">3</div>
+                </div>
+            </section>
+
+            <!-- 8. flex-shrink -->
+            <section>
+                <h2>8. flex-shrink</h2>
+                <div class="demo shrink-demo">
+                    <div class="item wide shrink0">No Shrink</div>
+                    <div class="item wide shrink2">Shrink</div>
+                </div>
+            </section>
+
+            <!-- 9. flex-basis -->
+            <section>
+                <h2>9. flex-basis</h2>
+                <div class="demo">
+                    <div class="item basis100">100px</div>
+                    <div class="item basis200">200px</div>
+                </div>
+            </section>
+
+            <!-- 10. align-self -->
+            <section>
+                <h2>10. align-self</h2>
+                <div class="demo alignself">
+                    <div class="item">1</div>
+                    <div class="item self-end">2</div>
+                    <div class="item">3</div>
+                </div>
+            </section>
+
+            <!-- 11. Responsive -->
+            <section>
+                <h2>11. Responsive Card Layout</h2>
+                <div class="cards">
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 2</div>
+                    <div class="card">Card 3</div>
+                    <div class="card">Card 4</div>
+                    <div class="card">Card 5</div>
+                    <div class="card">Card 6</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

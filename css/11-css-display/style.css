@@ -1,0 +1,99 @@
+/*
+    Topic: CSS Display
+    Purpose: Demonstrates common display values.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+/* =====================================
+   Shared Box Styles
+===================================== */
+
+.box {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #e3f2fd;
+    border: 2px solid #90caf9;
+}
+
+/* =====================================
+   Block
+===================================== */
+
+.block-box {
+    display: block;
+}
+
+/* =====================================
+   Inline
+===================================== */
+
+/*
+    Width and height do not work
+    as expected on inline elements.
+*/
+
+.inline-box {
+    display: inline;
+    background-color: #fff3cd;
+    border: 2px solid #ffe082;
+    padding: 0.5rem;
+}
+
+/* =====================================
+   Inline Block
+===================================== */
+
+.inline-block-box {
+    display: inline-block;
+
+    width: 120px;
+    height: 80px;
+
+    margin-right: 0.5rem;
+
+    background-color: #e8f5e9;
+    border: 2px solid #81c784;
+
+    text-align: center;
+    line-height: 80px;
+}
+
+/* =====================================
+   Display None
+===================================== */
+
+.none-box {
+    display: none;
+}
+
+/* =====================================
+   Visibility Hidden
+===================================== */
+
+.hidden-box {
+    visibility: hidden;
+}
+
+/* =====================================
+   Other Display Values
+===================================== */
+
+/*
+    Other common values:
+
+    flex
+    inline-flex
+
+    grid
+    inline-grid
+
+    table
+    table-cell
+
+    contents
+
+    These will be covered
+    in later topics.
+*/

@@ -1,0 +1,92 @@
+/*
+    Topic: CSS Overflow
+    Purpose: Demonstrates overflow behavior.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+/* =====================================
+   Shared Box Styles
+===================================== */
+
+.box {
+    width: 250px;
+    height: 80px;
+
+    padding: 1rem;
+
+    border: 2px solid #999999;
+    background-color: #f5f5f5;
+}
+
+/* =====================================
+   Overflow Visible
+===================================== */
+
+.overflow-visible {
+    overflow: visible;
+}
+
+/* =====================================
+   Overflow Hidden
+===================================== */
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* =====================================
+   Overflow Scroll
+===================================== */
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+/* =====================================
+   Overflow Auto
+===================================== */
+
+.overflow-auto {
+    overflow: auto;
+}
+
+/* =====================================
+   Overflow X and Y
+===================================== */
+
+.overflow-axis {
+    width: 300px;
+
+    border: 2px solid #999999;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.wide-content {
+    width: 700px;
+
+    padding: 1rem;
+
+    background-color: #e3f2fd;
+}
+
+/* =====================================
+   Common Overflow Values
+===================================== */
+
+/*
+    overflow values:
+
+    visible
+    hidden
+    scroll
+    auto
+
+    Axis control:
+
+    overflow-x
+    overflow-y
+*/

@@ -1,0 +1,65 @@
+/*
+    Topic: CSS Z-Index
+    Purpose: Demonstrates stacking order.
+
+    Author: Rayhana Akter Sumaya
+    Last Updated: 2026-07-22
+*/
+
+.z-container {
+    position: relative;
+    height: 250px;
+}
+
+.z-box {
+    position: absolute;
+
+    width: 180px;
+    height: 120px;
+
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    top: 20px;
+    left: 20px;
+
+    background-color: #ef5350;
+
+    z-index: 1;
+}
+
+.box-2 {
+    top: 50px;
+    left: 80px;
+
+    background-color: #42a5f5;
+
+    z-index: 2;
+}
+
+.box-3 {
+    top: 80px;
+    left: 140px;
+
+    background-color: #66bb6a;
+
+    z-index: 3;
+}
+
+/*
+    Higher z-index values
+    appear above lower values.
+
+    Common examples:
+
+    Dropdowns
+    Modals
+    Tooltips
+    Sidebars
+*/
