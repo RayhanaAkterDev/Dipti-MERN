@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>day-17</title>
+    </head>
+    <body>
+        <!-- <div id="app"></div> -->
+
+        <div class="w-full min-h-screen flex justify-center items-center">
+            <form action="#" id="signupForm" class="border rounded p-4 shadow">
+                <h2 class="text-3xl mb-6">Sign-up Form</h2>
+
+                <!-- Name field -->
+                <div class="mb-3 flex flex-col gap-2">
+                    <label for="name" class="text-lg">Your name :</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        autocomplete="on"
+                        class="border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-300 w-84"
+                    />
+
+                    <!-- Error message -->
+                    <p id="nameError" class="text-red-500 text-sm"></p>
+                </div>
+
+                <!-- Email field -->
+                <div class="mb-3 flex flex-col gap-2">
+                    <label for="email" class="text-lg">Your email :</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        autocomplete="on"
+                        class="border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-300 w-84"
+                    />
+
+                    <!-- Error message -->
+                    <p id="emailError" class="text-red-500 text-sm"></p>
+                </div>
+
+                <!-- Gender -->
+                <fieldset class="mb-3 flex flex-col gap-2">
+                    <legend class="text-lg">Your gender:</legend>
+
+                    <div class="flex gap-4">
+                        <label for="male" class="text-lg">
+                            <input type="radio" name="gender" value="male" id="male" class="mr-2" />
+                            Male
+                        </label>
+
+                        <label for="female" class="text-lg">
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                                id="female"
+                                class="mr-2"
+                            />
+                            Female
+                        </label>
+                    </div>
+
+                    <!-- Error message -->
+                    <p id="genderError" class="text-red-500 text-sm"></p>
+                </fieldset>
+
+                <!-- Skills -->
+                <fieldset class="mb-3">
+                    <legend class="text-lg mr-2">Your skills:</legend>
+
+                    <div class="flex gap-3 mt-1">
+                        <label for="html" class="text-lg">
+                            <input
+                                type="checkbox"
+                                name="skill"
+                                value="html"
+                                id="html"
+                                class="mr-2"
+                            />
+                            HTML
+                        </label>
+
+                        <label for="css" class="text-lg">
+                            <input type="checkbox" name="skill" value="css" id="css" class="mr-2" />
+                            CSS
+                        </label>
+
+                        <label for="js" class="text-lg">
+                            <input type="checkbox" name="skill" value="js" id="js" class="mr-2" />
+                            JavaScript
+                        </label>
+                    </div>
+
+                    <!-- Error message -->
+                    <p id="skillsError" class="text-red-500 text-sm"></p>
+                </fieldset>
+
+                <!-- Password field -->
+                <div class="mb-3 flex flex-col gap-2">
+                    <label for="password" class="text-lg">Your password :</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        autocomplete="on"
+                        class="border border-gray-400 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-teal-300 w-84"
+                    />
+
+                    <!-- Error message -->
+                    <p id="passwordError" class="text-red-500 text-sm"></p>
+                </div>
+
+                <div class="mb-3">
+                    <button
+                        type="submit"
+                        class="border rounded-full bg-blue-500 text-white hover:bg-blue-700 cursor-pointer px-4 py-2 w-full"
+                    >
+                        Sign Up
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <script type="module" src="./src/main.js"></script>
+    </body>
+</html>
