@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM - Document Object Model</title>
+    </head>
+    <body>
+        <h1 id="heading" onclick="console.log('ho ho ho')">Hello World</h1>
+        <p class="para">This is a paragraph.</p>
+
+        <div>This is div</div>
+        <div>This is another div</div>
+
+        <br />
+        <input type="text" name="myInput" placeholder="Enter your name" />
+
+        <br />
+        <br />
+
+        <div>
+            <img src="" alt="Sumaya Akter" id="myImage" />;
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor soluta
+                cupiditate veniam non reiciendis obcaecati iusto molestias quia placeat nihil, ipsam
+                voluptates provident aspernatur facilis atque consequuntur neque excepturi nulla
+                molestiae nostrum consectetur enim! Quas, alias aut. Praesentium ipsum veniam
+                dignissimos aliquid qui nemo, sed vero fuga! Laudantium, mollitia. Vitae animi
+                voluptas beatae illo? Voluptatum omnis inventore fuga, ab, vero fugiat voluptas
+                eveniet exercitationem illum iusto obcaecati porro quis est similique at magni
+                ducimus eos culpa quisquam possimus doloribus magnam. Numquam blanditiis commodi
+                laudantium quisquam, doloribus explicabo nobis aperiam eveniet nesciunt dolorum eius
+                voluptas nam quos aliquid! Natus, quos?
+            </p>
+        </div>
+
+        <button id="myBtn">Click Me</button>
+
+        <div id="test"></div>
+
+        <script>
+            // console.log(document);
+
+            const heading = document.getElementById("heading");
+            heading.textContent = "Hello DOM"; // only text content change kora jay, html tag add/push kora jay na
+            heading.innerText = "Hello universe"; // only text content change kora jay, html tag add/push kora jay na
+            heading.innerHTML = "<i>Hello JS</i>"; // html tag add/push kora jay
+            heading.style.color = "red";
+
+            // console.log(document.getElementById("heading"));
+
+            // const para = document.getElementsByClassName("para");
+            // console.log(para);
+
+            const para = document.getElementsByClassName("para")[0];
+            para.style.color = "blue";
+            para.textContent = "This is a paragraph modified by JS.";
+
+            // console.log(document.getElementsByTagName("div"));
+            // console.log(document.getElementsByName("myInput"));
+
+            // NOTE: html collection a direct foreach loop chalano jay na, kintu node collection a jay. html collection ke array te convert kore foreach loop chalano jay.
+
+            const myImg = document.getElementById("myImage");
+            // myImg.src = "https://images01.nicepagecdn.com/page/40/05/website-design-preview-400501.jpg";
+            myImg.src = "./self-made-web-designer-upwork-profile.jpg";
+
+            myImg.width = "300";
+            myImg.style.width = "50%";
+            myImg.style.height = "600px";
+            myImg.setAttribute("alt", "This is a image");
+
+            const imgPara = myImg.nextElementSibling;
+            imgPara.textContent =
+                "aj 8-august 2026 | 39 July | Sheikh Hasina Bangladesh ashte chayeche";
+            imgPara.style.color = "green";
+            imgPara.style.fontSize = "20px";
+            imgPara.style.fontWeight = "bold";
+            imgPara.style.fontStyle = "italic";
+
+            const btn = document.getElementById("myBtn");
+            btn.style.cssText = `background-color: green; 
+                color: white; 
+                padding: 10px 20px; 
+                border: none; 
+                border-radius: 5px; 
+                cursor: pointer; 
+                font-size: 16px;
+                font-weight: bold;`;
+            btn.style.display = "block";
+
+            // event listener
+
+            let isRed = false;
+
+            btn.addEventListener("click", () => {
+                // alert("Button clicked!");
+                // imgPara.textContent = "aj 8-august 2026 | 39 July | Sheikh Hasina Bangladesh ashte chayeche | In December.";
+                // imgPara.style.color = "red";
+
+                if (!isRed) {
+                    imgPara.style.color = "red";
+                    isRed = true;
+                } else {
+                    imgPara.style.color = "green";
+                    isRed = false;
+                }
+            });
+
+            imgPara.addEventListener("mouseover", (e) => {
+                imgPara.textContent =
+                    "aj 8-august 2026 | 39 July | Sheikh Hasina Bangladesh ashte chayeche";
+            });
+
+            imgPara.addEventListener("mouseout", (e) => {
+                imgPara.textContent =
+                    "aj 8-august 2026 | 39 July | Sheikh Hasina Bangladesh ashte chayeche | In December.";
+            });
+
+            // ================================================================
+
+            const test = document.getElementById("test");
+            const h2 = document.createElement("h2");
+            h2.textContent = "This is a dynamically created h2 element.";
+            h2.style.color = "purple";
+
+            const p = document.createElement("p");
+            p.textContent = "This is a dynamically created paragraph.";
+            p.style.cssText = `color: orange; 
+                font-size: 18px; 
+                font-weight: bold;`;
+
+            const button = document.createElement("button");
+            button.textContent = "Read More";
+            button.style.cssText = `background-color: blue; 
+                    color: white;
+                    padding: 10px 20px; 
+                    border: none; 
+                    border-radius: 5px; 
+                    cursor: pointer; 
+                    font-size: 16px;
+                    font-weight: bold;`;
+
+            test.appendChild(h2);
+            test.appendChild(p);
+            test.appendChild(button);
+
+            test.style.cssText = `border: 1px solid #ccc; 
+                padding: 20px; 
+                margin: 20px 0; 
+                border-radius: 5px; 
+                display : inline-block;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);`;
+        </script>
+    </body>
+</html>
