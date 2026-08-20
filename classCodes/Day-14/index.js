@@ -13,9 +13,9 @@ console.log(z);
 
 // Closure function
 function mainFunc(fPara) {
-  return function (sPara) {
-    return fPara + " " + sPara;
-  };
+    return function (sPara) {
+        return fPara + " " + sPara;
+    };
 }
 
 const kuddus = mainFunc("ha ha ha");
@@ -26,23 +26,23 @@ console.log(kuddus("ho ho ho"));
 // =======================
 
 function myInfo(name) {
-  return "My name is " + name;
+    return "My name is " + name;
 }
 
 const myInfo1 = (name) => {
-  return "My name is " + name;
+    return "My name is " + name;
 };
 
 const myInfo2 = function (name) {
-  return "My name is " + name;
+    return "My name is " + name;
 };
 
 const myInfo3 = (name) => {
-  return "My name is " + name;
+    return "My name is " + name;
 };
 
 const myInfo4 = (name) => {
-  return "My name is " + name;
+    return "My name is " + name;
 };
 
 const myInfo5 = (name) => "My name is " + name;
@@ -59,11 +59,11 @@ console.log(myInfo5("Sumaya"));
 // Template Literal
 // =======================
 
-const a = "ami";
-const b = "valo achi";
+const a = "I";
+const b = "am fine";
 
 const c = () => {
-  return "ami vaat khai";
+    return "I eat rice";
 };
 
 console.log(a + " " + b + "." + " and " + c());
@@ -73,7 +73,7 @@ console.log(`${a} ${b}. and ${c()}`);
 // Array Destructuring
 // =======================
 
-const myStudents = ["Refat", "Shobuj", "Borno", "Mohan"];
+const myStudents = ["sumaya", "Raja", "Alal", "Vadu"];
 
 const [std1, std2, ...std3] = myStudents;
 
@@ -87,10 +87,10 @@ console.log(std3);
 
 // Changed variable name from myInfo -> personInfo
 const personInfo = {
-  myName: "Asif",
-  myGender: "Male",
-  isMarried: true,
-  totalChildren: 3,
+    myName: "Sumaya",
+    myGender: "Female",
+    isMarried: false,
+    totalChildren: 1,
 };
 
 const { myName, myGender } = personInfo;
