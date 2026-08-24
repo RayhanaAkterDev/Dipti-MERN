@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-italianno: "Italianno", cursive;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.div-center {
+    @apply text-center p-12;
+}
+
+.div-center ul {
+    @apply inline-flex justify-center gap-4 px-12;
+}
+
+.div-center ul > li {
+    @apply border-b-0 hover:border-b p-1 transition-all ease-in duration-200;
+}
+
+.home > .hero {
+    @apply bg-red-500/30 mt-12;
+}
+
+.hero h1 {
+    @apply text-2xl p-12 capitalize;
+}
