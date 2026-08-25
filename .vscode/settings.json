@@ -1,8 +1,10 @@
 {
+    "css.lint.unknownAtRules": "ignore",
     "cSpell.words": [
         "Airbuds",
         "Akter",
         "alal",
+        "alvi",
         "Andolon",
         "ashulia",
         "chashara",
