@@ -104,3 +104,11 @@ body {
 .trending-heading-mostWatched::after {
     @apply left-28 sm:left-36 md:left-46;
 }
+
+/* ========================================= */
+/* EXPLORE MOVIES */
+
+.exploreMovies::after {
+    content: "";
+    @apply w-full h-full absolute left-0 bg-primary-typo/60 rounded-4xl -z-10;
+}
